@@ -24,22 +24,29 @@ app.set('view engine','html');
 app.use(ejs_layouts.express);
 
 /*路由处理*/
-
+app.get('/',function(req,res){
+    res.layout('./pages/public/layout', {title:"Homepage"}, {
+        body: {
+            block: "./pages/login/login",
+            data: {name: "Matthew"}
+        }
+    });
+});
 
 /*错误处理*/
 app.use(function (req,res,next) {
     //获取登录名和token
-    res.status(404).layout('./public/main',{title:'404,您请求的内容不存在'},{
+    res.status(404).layout('./pages/public/layout',{title:'404,您请求的内容不存在'},{
         body:{
-            block :"./error/404"
+            block :"./pages/error/404"
         }
     });
 });
 app.use(function(err, req, res, next) {
     console.error(err.stack);
-    res.status(500).layout('./public/main',{title:'500,服务器内部错误'},{
+    res.status(500).layout('./pages/public/layout',{title:'500,服务器内部错误'},{
         body:{
-            block :"./error/500"
+            block :"./pages/error/500"
         }
     });
 });
