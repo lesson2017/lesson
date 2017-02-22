@@ -4,7 +4,7 @@
  * @description : Home pages router
  * */
 exports.index = function (req,res,next) {
-    res.layout('./pages/public/layout', {title:"博客","nav":"blog",layout_nav:"main"}, {
+    res.layout('./pages/public/layout', {title:"博客","nav":"blog"}, {
         body: {
             block: "./pages/blog/index",
             data: {}

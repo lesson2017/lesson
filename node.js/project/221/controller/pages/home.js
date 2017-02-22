@@ -4,10 +4,12 @@
  * @description : Home pages router
  * */
 exports.index = function (req,res,next) {
-    res.layout('./pages/public/layout', {title:"首页","nav":"home",layout_nav:"main"}, {
+    res.layout('./pages/public/layout', {title:"首页","nav":"home"}, {
         body: {
             block: "./pages/home/index",
-            data: {}
+            data: {
+                "nav":"home"
+            }
         }
     });
 }

@@ -28,6 +28,7 @@ module.exports = function (app) {
 
     //login
     app.get('/login',login.index);
+    app.post('/doLogin',urlencodedParser,login.doLogin);
 
     //reg
     app.get('/reg',reg.index);

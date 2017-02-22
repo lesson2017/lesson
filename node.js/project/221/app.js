@@ -3,12 +3,32 @@
  * @date : 2017/2/8
  * @description :电影网站实例-mysql版，主程序入口文件
  * */
+
 var express = require('express');
+var session = require('express-session');
+var cookieParser = require('cookie-parser');
 var ejs = require('ejs');
 var ejs_layouts = require('ejs-layouts');
 var router = require('./module/router');
 var app = express();
 
+//使用cookie中间件
+app.use(cookieParser());
+
+//使用express-session中间件
+app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true,
+    cookie: {maxAge: 30 * 60 * 1000 }
+}));
+
+//只要用户操作，session自动续期
+app.use(function(req, res, next){
+    req.session._garbage = Date();
+    req.session.touch();
+    next();
+});
 //静态资源配置
 app.use(express.static('static'));
 //视图模板配置

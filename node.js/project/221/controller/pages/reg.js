@@ -8,7 +8,7 @@ var mysql = require('mysql');
 var db = require('../../module/db_mysql_pool');
 var global = require('../../module/global.inc');
 exports.index = function (req,res,next) {
-    res.layout('./pages/public/layout', {title:"欢迎注册",layout_nav:"reg"}, {
+    res.layout('./pages/public/layout', {title:"欢迎注册"}, {
         body: {
             block: "./pages/reg/index",
             data: {}
