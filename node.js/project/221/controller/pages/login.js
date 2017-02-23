@@ -16,8 +16,6 @@ exports.index = function (req, res, next) {
     });
 };
 exports.doLogin = function (req,res) {
-    console.log(req.body.email);
-    console.log(req.body.password);
     //增加数据
     var sql = "SELECT * FROM blog_user WHERE email = '"+ req.body.email +"'";
     db.query(sql, function (err,rows) {

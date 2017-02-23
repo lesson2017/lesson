@@ -10,17 +10,36 @@ Target Server Type    : MYSQL
 Target Server Version : 50520
 File Encoding         : 65001
 
-Date: 2017-02-22 19:45:17
+Date: 2017-02-23 18:34:59
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for blog_list
+-- ----------------------------
+DROP TABLE IF EXISTS `blog_list`;
+CREATE TABLE `blog_list` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) DEFAULT NULL,
+  `content` text,
+  `author` varchar(10) DEFAULT NULL,
+  `datetime` datetime DEFAULT NULL,
+  `classify` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of blog_list
+-- ----------------------------
+INSERT INTO `blog_list` VALUES ('6', '博客测试3号机', '<p>博客测试3号机运行正常</p>', 'ghost', '2017-02-23 17:28:34', null);
 
 -- ----------------------------
 -- Table structure for blog_user
 -- ----------------------------
 DROP TABLE IF EXISTS `blog_user`;
 CREATE TABLE `blog_user` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `email` varchar(100) DEFAULT NULL,
   `nickname` varchar(20) DEFAULT NULL,
   `sex` char(1) DEFAULT NULL,

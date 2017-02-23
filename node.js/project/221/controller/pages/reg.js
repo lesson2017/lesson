@@ -26,7 +26,6 @@ exports.doReg = function (req,res,next) {
         "inn" : JSON.stringify(req.body.inn),
         "ip" : ip
     };
-    console.log(formData);
     //增加数据
     var sql = 'INSERT INTO blog_user(email,nickname,sex,password,inn,datetime,ip) VALUES(?,?,?,?,?,now(),?)';
     var param = [formData.email,formData.nickname,formData.sex,formData.password,formData.inn,formData.ip];

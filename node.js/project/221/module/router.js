@@ -9,6 +9,7 @@ var labs = require('../controller/pages/labs');
 var about = require('../controller/pages/about');
 var login = require('../controller/pages/login');
 var reg = require('../controller/pages/reg');
+var admin = require('../controller/admin/admin');
 //解析表单提交
 var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json();
@@ -33,4 +34,10 @@ module.exports = function (app) {
     //reg
     app.get('/reg',reg.index);
     app.post('/doReg',urlencodedParser,reg.doReg);
+
+    //admin blog
+    app.get('/admin/blog/list',admin.blogList);
+    app.get('/admin/blog/publish',admin.blogPublish);
+    app.post('/admin/blog/del',urlencodedParser,admin.blogDel);
+    app.post('/admin/blog/doEdit',urlencodedParser,admin.doEdit);
 }
