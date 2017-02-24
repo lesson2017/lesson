@@ -37,7 +37,14 @@ module.exports = function (app) {
 
     //admin blog
     app.get('/admin/blog/list',admin.blogList);
-    app.get('/admin/blog/publish',admin.blogPublish);
+    app.get('/admin/blog/publish/:id?',admin.blogPublish);
     app.post('/admin/blog/del',urlencodedParser,admin.blogDel);
-    app.post('/admin/blog/doEdit',urlencodedParser,admin.doEdit);
+    app.post('/admin/blog/doEdit/:id?',urlencodedParser,admin.doEdit);
+
+    //admin labs
+    app.get('/admin/labs/list',admin.labsList);
+    app.get('/admin/labs/demo/id',admin.labsDemo);
+    app.get('/admin/labs/demo/upload',admin.labsUpload);
+    app.post('/admin/labs/doUpload',urlencodedParser,admin.labsDoUpload);
+    app.post('/admin/labs/del',urlencodedParser,admin.labsDel);
 }
