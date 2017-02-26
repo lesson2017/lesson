@@ -1,0 +1,33 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+#header{
+    background: #6f5499;
+    margin-bottom: 20px;
+}
+#header .navbar-brand,
+#header .navbar-nav>li>a
+{
+    font-weight: 500;
+    color: #fff;
+}
+#header .navbar-nav>li{
+    margin-right: 5px;
+}
+#header .navbar-nav>li.active{
+    background: #fff;
+}
+#header .navbar-nav>li>a{
+    font-size: 16px;
+}
+#header .navbar-nav>li.active a,
+#header .navbar-nav>li>a:hover{
+    color: #6f5499;
+}
+#footer{
+    height: 100px;
+    line-height: 100px;
+}
+.thumbnail img{
+    height: 345px;
+}

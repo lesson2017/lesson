@@ -1,0 +1,28 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "project groups",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "captchapng": "^0.0.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.4.2",
+    "ejs-layouts": "^0.0.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.0",
+    "formidable": "^1.0.17",
+    "mongodb": "^2.2.4",
+    "mysql": "^2.12.0",
+    "request": "^2.74.0",
+    "silly-datetime": "^0.1.2",
+    "unzip": "^0.1.11",
+    "when": "^3.7.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "none"
+  },
+  "author": "ghost",
+  "license": "ISC"
+}

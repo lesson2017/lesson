@@ -1,0 +1,54 @@
+_http_outgoing.js:344
+    throw new Error('Can\'t set headers after they are sent.');
+    ^
+
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:344:11)
+    at ServerResponse.header (D:\wamp\www\node.js\node_modules\express\lib\response.js:719:10)
+    at ServerResponse.contentType (D:\wamp\www\node.js\node_modules\express\lib\response.js:552:15)
+    at ServerResponse.send (D:\wamp\www\node.js\node_modules\express\lib\response.js:139:14)
+    at D:\wamp\www\node.js\lesson\littleAlbum\controller\route.js:78:17
+    at IncomingForm.<anonymous> (D:\wamp\www\node.js\node_modules\formidable\lib\incoming_form.js:105:9)
+    at emitNone (events.js:67:13)
+    at IncomingForm.emit (events.js:166:7)
+    at IncomingForm._maybeEnd (D:\wamp\www\node.js\node_modules\formidable\lib\incoming_form.js:553:8)
+    at D:\wamp\www\node.js\node_modules\formidable\lib\incoming_form.js:230:12
+_http_outgoing.js:344
+    throw new Error('Can\'t set headers after they are sent.');
+    ^
+
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:344:11)
+    at ServerResponse.header (D:\wamp\www\node.js\node_modules\express\lib\response.js:719:10)
+    at ServerResponse.contentType (D:\wamp\www\node.js\node_modules\express\lib\response.js:552:15)
+    at ServerResponse.send (D:\wamp\www\node.js\node_modules\express\lib\response.js:139:14)
+    at D:\wamp\www\node.js\lesson\littleAlbum\controller\route.js:78:17
+    at IncomingForm.<anonymous> (D:\wamp\www\node.js\node_modules\formidable\lib\incoming_form.js:105:9)
+    at emitNone (events.js:67:13)
+    at IncomingForm.emit (events.js:166:7)
+    at IncomingForm._maybeEnd (D:\wamp\www\node.js\node_modules\formidable\lib\incoming_form.js:553:8)
+    at D:\wamp\www\node.js\node_modules\formidable\lib\incoming_form.js:230:12
+_http_outgoing.js:344
+    throw new Error('Can\'t set headers after they are sent.');
+    ^
+
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:344:11)
+    at ServerResponse.header (D:\wamp\www\node.js\node_modules\express\lib\response.js:719:10)
+    at ServerResponse.contentType (D:\wamp\www\node.js\node_modules\express\lib\response.js:552:15)
+    at ServerResponse.send (D:\wamp\www\node.js\node_modules\express\lib\response.js:139:14)
+    at D:\wamp\www\node.js\lesson\littleAlbum\controller\route.js:78:17
+    at IncomingForm.<anonymous> (D:\wamp\www\node.js\node_modules\formidable\lib\incoming_form.js:105:9)
+    at emitNone (events.js:67:13)
+    at IncomingForm.emit (events.js:166:7)
+    at IncomingForm._maybeEnd (D:\wamp\www\node.js\node_modules\formidable\lib\incoming_form.js:553:8)
+    at D:\wamp\www\node.js\node_modules\formidable\lib\incoming_form.js:230:12
+node.js:777
+        throw errnoException(err, 'kill');
+        ^
+
+Error: kill ESRCH
+    at exports._errnoException (util.js:870:11)
+    at process.kill (node.js:777:15)
+    at null._onTimeout (C:\Users\Ghost\AppData\Roaming\npm\node_modules\supervisor\lib\supervisor.js:405:25)
+    at Timer.listOnTimeout (timers.js:92:15)

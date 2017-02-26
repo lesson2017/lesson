@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>小小相册</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<!--header-->
+<div id="header">
+    <div class="container" >
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">小小相册</a>
+        </div>
+        <div class="navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a href="/">首页</a></li>
+                <li class="active"><a href="javascript:;">相册</a></li>
+                <li><a href="/upload">上传</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--header /-->
+
+<!--container-->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="/">全部相册</a></li>
+        <li class="active"><a href="javascript:;"><%= albumName%></a></li>
+    </ol>
+    <div class="rows">
+        <%for(var i=0;i<images.length;i++){%>
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <img src="/<%= albumName%>/<%= images[i]%>" alt="测试图片">
+            </div>
+        </div>
+        <%}%>
+    </div>
+</div>
+<!--container /-->
+
+<!--footer-->
+<p id="footer" class="text-center">星际实验室提供技术支持！</p>
+<!--footer /-->
+</body>
+</html>
