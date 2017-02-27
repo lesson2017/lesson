@@ -5,7 +5,7 @@
  * */
 var db = require('../../module/db_mysql_pool');
 exports.index = function (req,res) {
-    var sql = "SELECT * FROM blog_list WHERE id = '"+ id +"'";
+    var sql = "SELECT * FROM blog_list";
     db.query(sql,function (err,rows) {
         if(err)
         {
@@ -15,7 +15,9 @@ exports.index = function (req,res) {
         res.layout('./pages/public/layout', {title:"博客"}, {
             body: {
                 block: "./pages/blog/index",
-                data: {}
+                data: {
+                    data : rows
+                }
             }
         });
     });

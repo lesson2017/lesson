@@ -1,16 +1,14 @@
 <div class="container">
-    <%for(var i=0;i<10;i++){%>
+    <%for(var i=0;i< data.length;i++){%>
     <div class="panel panel-success">
         <div class="panel-body">
-            <h5>新手小白进入Web前端第一天随笔</h5>
+            <h5><%= data[i].title%></h5>
             <p>
                 <span class="text-muted">浏览：100</span>
-                <span class="text-muted">更新时间：2015-01-23 12:12:34</span>
-                <span class="text-muted">分类：HTML/CSS</span>
+                <span class="text-muted">更新时间：<%= data[i].datetime%></span>
+                <span class="text-muted">分类：<%= data[i].classify%></span>
             </p>
-            <p>
-                第一天主要了解HTML从1.0-4.0的发展史，了解了HTML代表结构层，CSS代表样式层，JS代表行为层。学习前端总共分三个步骤，第一步骤学习html+css制作静态网页，第二部学习javaScript+jquery,第三部学习框架。课 ...
-            </p>
+            <p><%= data[i].description%></p>
         </div>
     </div>
     <%}%>
