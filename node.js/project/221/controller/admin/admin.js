@@ -86,16 +86,17 @@ exports.doEdit = function (req,res) {
         "title" : req.body.title,
         "content" : req.body.editorValue,
         "author" : "ghost",
-        "classify" : req.body.classify
+        "classify" : req.body.classify,
+        "description" : req.body.description
     };
     if(!id)
     {
         //增加数据
-        var sql = 'INSERT INTO blog_list(title,content,author,datetime,classify) VALUES(?,?,?,now(),?)';
-        var param = [formData.title,formData.content,formData.author,formData.classify];
+        var sql = 'INSERT INTO blog_list(title,content,author,datetime,classify,description) VALUES(?,?,?,now(),?,?)';
+        var param = [formData.title,formData.content,formData.author,formData.classify,formData.description];
     }else{
         //更新数据 UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值
-        var sql = "UPDATE blog_list SET title = '"+ formData.title +"',content='"+ formData.content +"',datetime=now(),classify='"+ formData.classify +"' WHERE id = '"+ id + "'";
+        var sql = "UPDATE blog_list SET title = '"+ formData.title +"',content='"+ formData.content +"',datetime=now(),classify='"+ formData.classify +"',description='"+ formData.description +"' WHERE id = '"+ id + "'";
     };
     db.query(sql,param, function (err,rows) {
         if(err)
@@ -132,7 +133,7 @@ exports.labsUnzip = function(req,res){
 //读取解压后的文件
 exports.labsDemo = function (req,res) {
     var id = req.params.id;
-    res.layout('./admin/public/layout', {title: "博客列表"}, {
+    res.layout('./admin/public/layout', {title: id}, {
         body: {
             block: "./output/"+id+"/index",
             data: {
