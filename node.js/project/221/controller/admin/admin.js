@@ -6,6 +6,9 @@
 var mysql = require('mysql');
 var db = require('../../module/db_mysql_pool');
 var global = require('../../module/global.inc');
+var path = require('path');
+var fs = require('fs');
+var unzip = require('unzip');
 //blog
 exports.blogList = function (req,res) {
     var sql = 'SELECT * FROM blog_list';
@@ -113,7 +116,31 @@ exports.labsList = function (req,res) {
         }
     });
 };
-exports.labsDemo = function (req,res) {};
+exports.labsUnzip = function(req,res){
+    var zipPath = __dirname+'/../../static/upload/zip/test.zip';
+    var outputPath = __dirname+'/../../views/output';
+    var extract = unzip.Extract({ path: outputPath}); //写入数据
+    var file = fs.createReadStream(zipPath).pipe(extract);
+    file.on('finish', function () {
+        console.log('finish');
+    });
+    file.on('error', function (err) {
+        console.log(err);
+    });
+    res.send('success');
+};
+//读取解压后的文件
+exports.labsDemo = function (req,res) {
+    var id = req.params.id;
+    res.layout('./admin/public/layout', {title: "博客列表"}, {
+        body: {
+            block: "./output/"+id+"/index",
+            data: {
+                id : id
+            }
+        }
+    });
+};
 exports.labsUpload = function (req,res) {};
 exports.labsDoUpload = function (req,res) {};
 exports.labsDel = function (req,res) {};

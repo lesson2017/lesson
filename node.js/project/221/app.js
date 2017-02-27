@@ -31,6 +31,7 @@ app.use(function(req, res, next){
 });
 //静态资源配置
 app.use(express.static('static'));
+app.use(express.static('./views/output')); //这是第二个静态服务
 //视图模板配置
 app.set('views',__dirname + '/views');
 

@@ -43,8 +43,9 @@ module.exports = function (app) {
 
     //admin labs
     app.get('/admin/labs/list',admin.labsList);
-    app.get('/admin/labs/demo/id',admin.labsDemo);
     app.get('/admin/labs/demo/upload',admin.labsUpload);
+    app.get('/admin/labs/demo/:id',admin.labsDemo);
+    app.get('/admin/labs/unzip/:id?',admin.labsUnzip);
     app.post('/admin/labs/doUpload',urlencodedParser,admin.labsDoUpload);
     app.post('/admin/labs/del',urlencodedParser,admin.labsDel);
 }
