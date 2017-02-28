@@ -118,7 +118,8 @@ exports.labsList = function (req,res) {
     });
 };
 exports.labsUnzip = function(req,res){
-    var zipPath = __dirname+'/../../static/upload/zip/test.zip';
+    console.log(req.params.id);
+    /*var zipPath = __dirname+'/../../static/upload/zip/test.zip';
     var outputPath = __dirname+'/../../views/output';
     var extract = unzip.Extract({ path: outputPath}); //写入数据
     var file = fs.createReadStream(zipPath).pipe(extract);
@@ -127,7 +128,7 @@ exports.labsUnzip = function(req,res){
     });
     file.on('error', function (err) {
         console.log(err);
-    });
+    });*/
     res.send('success');
 };
 //读取解压后的文件

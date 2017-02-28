@@ -63,9 +63,9 @@ exports.fnUploadDeal = function (file,newFileName,res){
     //如果是图存入images文件夹，否则存入zip文件夹
     if(file.type === 'image/jpeg')
     {
-        var newPath = path.normalize(__dirname +'/../static/upload/images/'+ newFileName);
+        var newPath = path.normalize(__dirname +'/../static/img/labs/'+ newFileName);
     }else{
-        var newPath = path.normalize(__dirname +'/../static/upload/zip/'+ newFileName);
+        var newPath = path.normalize(__dirname +'/../static/upload/'+ newFileName);
     };
 
     fs.rename(oldPath,newPath, function (err,next) {

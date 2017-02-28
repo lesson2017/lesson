@@ -1,18 +1,18 @@
 <div class="container">
     <div class="row">
-        <%for(var i=1;i<=14;i++){%>
+        <%data.forEach(function(item){%>
         <div class="col-md-3">
             <div class="thumbnail">
-                <img src="/img/demo/1-<%= i%>.jpg" class="labs-thumbnail">
+                <img src="/img/labs/<%= item.imgPath%>" class="labs-thumbnail">
                 <div class="caption">
-                    <h3>Thumbnail label</h3>
+                    <h3><%= item.title%></h3>
+                    <p><%= item.description%></p>
                     <p>
-                        <a href="#" class="btn btn-primary">Button</a>
-                        <a href="#" class="btn btn-default">Button</a>
+                        <a href="/labs/demo/<%= item.id%>" class="btn btn-default">查看</a>
                     </p>
                 </div>
             </div>
         </div>
-        <%}%>
+        <%})%>
     </div>
 </div>

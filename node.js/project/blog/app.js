@@ -31,6 +31,7 @@ app.use(function(req, res, next){
 });
 //静态资源配置
 app.use(express.static('static'));
+app.use(express.static('./views/output')); //这是第二个静态服务
 //视图模板配置
 app.set('views',__dirname + '/views');
 
@@ -66,9 +67,9 @@ app.use(function(err, req, res, next) {
 });
 
 //设置监听端口
-app.listen(6000, function (err) {
+app.listen(5000, function (err) {
     if (err) {
         throw err;
     };
-    console.log("The server is started,listen on port 6000");
+    console.log("The server is started,listen on port 5000");
 });

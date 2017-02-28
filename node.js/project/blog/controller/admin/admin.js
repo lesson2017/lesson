@@ -118,8 +118,6 @@ exports.labsList = function (req,res) {
         }
     });
 };
-exports.labsDemo = function (req,res) {};
-
 exports.labsUpload = function (req,res) {
     res.layout('./admin/public/layout', {title: "发布Demo"}, {
         body: {
@@ -148,8 +146,9 @@ exports.labsDoUpload = function (req,res) {
         var ext_name_img = path.extname(filesArr[0].upload_img.name);
         var ext_name_zip = path.extname(filesArr[0].upload_code_zip.name);
         var random = parseInt(Math.random()*89999 + 10000);
-        var newFileName_img = sd.format(new Date(), 'YYYYMMDDHHmmss') + random + ext_name_img;
-        var newFileName_zip = sd.format(new Date(), 'YYYYMMDDHHmmss') + random + ext_name_zip;
+        var new_name = sd.format(new Date(), 'YYYYMMDDHHmmss') + random;
+        var newFileName_img = new_name + ext_name_img;
+        var newFileName_zip = new_name + ext_name_zip;
 
         filesArr.forEach(function (item) {
             global.fnUploadDeal(item.upload_img,newFileName_img);
@@ -158,6 +157,7 @@ exports.labsDoUpload = function (req,res) {
         
         //上传成功后执行写入数据库
         var formData = {
+            "id" : new_name,
             "title" : fields.title,
             "description" : fields.description,
             "author" : "ghost",
@@ -168,8 +168,8 @@ exports.labsDoUpload = function (req,res) {
         };
         console.log(formData);
         //增加数据
-        var sql = "INSERT INTO blog_labs(title,classify,description,author,imgPath,zipPath,pv,datetime) VALUES(?,?,?,?,?,?,?,now())";
-        var param = [formData.title,formData.classify,formData.description,formData.author,formData.imgPath,formData.zipPath,formData.pv];
+        var sql = "INSERT INTO blog_labs(id,title,classify,description,author,imgPath,zipPath,pv,datetime) VALUES(?,?,?,?,?,?,?,?,now())";
+        var param = [formData.id,formData.title,formData.classify,formData.description,formData.author,formData.imgPath,formData.zipPath,formData.pv];
         db.query(sql,param, function (err,rows) {
             if(err)
             {
@@ -185,26 +185,23 @@ exports.labsDel = function (req,res) {};
 
 exports.labsUnzip = function (req,res) {
     var id = req.params.id;
-    //fs.createReadStream(__dirname+'/../../static/upload/zip/'+id+'.zip').pipe(unzip.Extract({ path: __dirname+'/../../static/output/'+id }));
-
-    fs.createReadStream(__dirname+'/../../static/upload/zip/'+id+'.zip')
-        .pipe(unzip.Parse())
-        .on('entry', function (entry) {
-            fs.mkdir(__dirname+'/../../static/output/'+id, function (err) {
-                if(err)
-                {
-                    console.log(err);
-                    console.log("创建目录失败！");
-                    return;
-                };
-                entry.pipe(fs.createWriteStream(__dirname+'/../../static/output/'+id));
+    //创建文件夹
+    fs.exists('./views/output/'+req.params.id, function (exists) {
+        console.log(exists);
+        if(!exists)
+        {
+            fs.mkdir('./views/output/'+req.params.id);
+            var zipPath = './static/upload/'+ id +'.zip';
+            var outputPath = './views/output/'+req.params.id;
+            var extract = unzip.Extract({ path: outputPath}); //写入数据
+            var file = fs.createReadStream(zipPath).pipe(extract);
+            file.on('finish', function () {
+                console.log('finish');
             });
-            /*var fileName = entry.path; //file name of zip
-            if (fileName === "this IS the file I'm looking for") {
-                entry.pipe(fs.createWriteStream('output/path'));
-            } else {
-                entry.autodrain();
-            }*/
-        });
-    res.send('success');
+            file.on('error', function (err) {
+                console.log(err);
+            });
+            res.json({'abc':'123'});
+        };
+    });
 };

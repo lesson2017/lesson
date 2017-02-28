@@ -23,6 +23,7 @@ module.exports = function (app) {
 
     //labs
     app.get('/labs',labs.index);
+    app.get('/labs/demo/:id',labs.labsDemo);
 
     //about
     app.get('/about',about.index);
@@ -45,6 +46,6 @@ module.exports = function (app) {
     app.get('/admin/labs/list',admin.labsList);
     app.get('/admin/labs/demo/upload',admin.labsUpload);
     app.get('/admin/labs/unzip/:id',admin.labsUnzip);
-    app.post('/admin/labs/doUpload',admin.labsDoUpload);
+    app.post('/admin/labs/doUpload',urlencodedParser,admin.labsDoUpload);
     app.post('/admin/labs/del',urlencodedParser,admin.labsDel);
 }
