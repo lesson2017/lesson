@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061ebe90-7d11-4639-a469-b6fbd43b788d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/lesson/fs/app_4.js" />
-      <change type="DELETED" beforePath="E:\lesson\node.js\project\blog\static\upload\images\2017022621190784495.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\lesson\node.js\project\blog\static\upload\zip\2017022621190784495.zip" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/221/controller/admin/admin.js" afterPath="$PROJECT_DIR$/node.js/project/221/controller/admin/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/controller/admin/admin.js" afterPath="$PROJECT_DIR$/node.js/project/blog/controller/admin/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/app.js" afterPath="$PROJECT_DIR$/node.js/project/blog/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js" afterPath="$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/module/db_mysql_pool.js" afterPath="$PROJECT_DIR$/node.js/project/blog/module/db_mysql_pool.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/module/global.inc.js" afterPath="$PROJECT_DIR$/node.js/project/blog/module/global.inc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/221/views/output/test/index.html" afterPath="$PROJECT_DIR$/node.js/project/221/views/output/test/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/pages/blog/index.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/pages/blog/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/pages/labs/index.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/pages/labs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/controller/pages/labs.js" afterPath="$PROJECT_DIR$/node.js/project/blog/controller/pages/labs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/221/views/admin/labs/labs_list.html" afterPath="$PROJECT_DIR$/node.js/project/221/views/admin/labs/labs_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/module/router.js" afterPath="$PROJECT_DIR$/node.js/project/blog/module/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/doc/blog.sql" afterPath="$PROJECT_DIR$/node.js/project/blog/doc/blog.sql" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -281,37 +264,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lesson" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lesson" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
+              <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,11 +286,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\lesson\node.js\project\blog\doc" />
       <recent name="E:\lesson\node.js\project\blog\controller\pages" />
       <recent name="E:\lesson\node.js\project\blog\views\pages\blog" />
       <recent name="E:\lesson\node.js\project\221" />
       <recent name="E:\lesson\node.js\project\221\doc" />
-      <recent name="E:\lesson\node.js\project\221\static\upload\zip" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\lesson\node.js\project\221\views" />
@@ -422,9 +375,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16243961" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16243961" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
