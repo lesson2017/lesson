@@ -1,34 +1,16 @@
 <div class="container">
-    <%for(var i=0;i< data.length;i++){%>
+    <%data.forEach(function(item){%>
     <div class="panel panel-success">
         <div class="panel-body">
-            <h5><%= data[i].title%></h5>
+            <h5><a href="/blogDetails/<%= item.id%>"><%= item.title%></a></h5>
             <p>
-                <span class="text-muted">浏览：100</span>
-                <span class="text-muted">更新时间：<%= data[i].datetime%></span>
-                <span class="text-muted">分类：<%= data[i].classify%></span>
+                <span class="text-muted">浏览：<%= item.pv%></span>
+                <span class="text-muted">更新时间：<%= item.datetime%></span>
+                <span class="text-muted">分类：<%= item.classify%></span>
             </p>
-            <p><%= data[i].description%></p>
+            <p><a href="/blogDetails/<%= item.id%>"><%= item.description%></a></p>
         </div>
     </div>
-    <%}%>
-    <div class="text-center">
-        <ul class="pagination">
-            <li>
-                <a href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li>
-                <a href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+    <%})%>
+    <%include ../public/page.html%>
 </div>

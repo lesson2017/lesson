@@ -10,40 +10,25 @@
  */
 
 var mysql = require('mysql');
+var settings = require('../config/settings');
 var pool = mysql.createPool({
-    host : "localhost",
-    user : "root",
-    password : "admin",
-    port : '3306',
-    database : 'blog'
+    host : settings.db.host,
+    user : settings.db.user,
+    password : settings.db.password,
+    port : settings.db.port,
+    database : settings.db.database
 });
-//pool.getConnection(function (err,connection) {
-//    connection.query('SELECT * FROM student;', function (err,rows) {
-//        if(err)
-//        {
-//            console.log('error:'+err.message);
-//            return;
-//        };
-//        for(var i=0;i<rows.length;i++)
-//        {
-//            console.log(rows[i]);
-//        };
-//    });
-//
-//    connection.query('insert into student(name,age) values("李牧",38)', function (err,rows) {
-//        if(err)
-//        {
-//            console.log('error:'+err.message);
-//            return;
-//        };
-//        console.log(rows.affectedRows);
-//        connection.release(); //释放连接
-//    });
-//});
 
 //执行sql
 exports.query = function (sql,param,callback) {
     pool.getConnection(function (err,connection) {
-        connection.query(sql,param, callback);
+        connection.query(sql,param, function (err, rows) {
+            if (err) {
+                console.log('error:' + err.message);
+                return;
+            };
+            callback(rows);
+        });
+        connection.release(); //释放连接一定要在这里是否链接
     });
 };

@@ -2,7 +2,308 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061ebe90-7d11-4639-a469-b6fbd43b788d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/blog/static/img/labs/2017022814563220006.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/blog/static/img/labs/2017022815134713956.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/blog/views/pages/blog/blog_details.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/blog/doc/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/blog/views/pages/public/page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/blog/config/settings.js" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\History.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\lib\application.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\lib\express.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\lib\middleware\init.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\lib\middleware\query.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\lib\request.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\lib\response.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\lib\router\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\lib\router\layer.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\lib\router\route.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\lib\utils.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\lib\view.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\mime-types\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\mime-types\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\mime-types\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\mime-types\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\db.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\mime-types\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\negotiator\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\negotiator\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\negotiator\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\negotiator\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\negotiator\lib\charset.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\negotiator\lib\encoding.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\negotiator\lib\language.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\negotiator\lib\mediaType.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\node_modules\negotiator\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\accepts\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\array-flatten\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\array-flatten\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\array-flatten\array-flatten.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\array-flatten\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\content-disposition\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\content-disposition\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\content-disposition\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\content-disposition\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\content-disposition\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\content-type\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\content-type\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\content-type\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\content-type\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\content-type\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\cookie-signature\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\cookie-signature\History.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\cookie-signature\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\cookie-signature\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\cookie-signature\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\cookie\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\cookie\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\cookie\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\cookie\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\cookie\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\History.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\browser.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\component.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\debug.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\node.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\node_modules\ms\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\node_modules\ms\History.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\node_modules\ms\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\node_modules\ms\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\node_modules\ms\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\node_modules\ms\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\debug\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\depd\History.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\depd\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\depd\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\depd\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\depd\lib\browser\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\depd\lib\compat\buffer-concat.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\depd\lib\compat\callsite-tostring.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\depd\lib\compat\event-listener-count.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\depd\lib\compat\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\depd\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\encodeurl\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\encodeurl\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\encodeurl\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\encodeurl\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\encodeurl\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\escape-html\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\escape-html\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\escape-html\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\escape-html\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\etag\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\etag\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\etag\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\etag\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\etag\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\node_modules\statuses\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\node_modules\statuses\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\node_modules\statuses\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\node_modules\statuses\codes.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\node_modules\statuses\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\node_modules\statuses\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\node_modules\unpipe\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\node_modules\unpipe\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\node_modules\unpipe\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\node_modules\unpipe\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\node_modules\unpipe\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\finalhandler\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\fresh\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\fresh\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\fresh\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\fresh\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\fresh\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\merge-descriptors\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\merge-descriptors\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\merge-descriptors\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\merge-descriptors\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\merge-descriptors\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\methods\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\methods\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\methods\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\methods\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\methods\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\on-finished\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\on-finished\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\on-finished\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\on-finished\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\on-finished\node_modules\ee-first\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\on-finished\node_modules\ee-first\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\on-finished\node_modules\ee-first\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\on-finished\node_modules\ee-first\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\on-finished\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\parseurl\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\parseurl\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\parseurl\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\parseurl\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\parseurl\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\path-to-regexp\History.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\path-to-regexp\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\path-to-regexp\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\path-to-regexp\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\path-to-regexp\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\Cakefile" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\ipaddr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\lib\ipaddr.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\src\ipaddr.coffee" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\test\ipaddr.test.coffee" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\proxy-addr\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\.eslintignore" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\.jscs.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\dist\qs.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\lib\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\lib\parse.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\lib\stringify.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\lib\utils.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\test\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\test\parse.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\test\stringify.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\qs\test\utils.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\range-parser\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\range-parser\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\range-parser\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\range-parser\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\range-parser\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\.bin\mime" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\.bin\mime.cmd" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\destroy\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\destroy\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\destroy\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\destroy\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\inherits.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\inherits_browser.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\test.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\setprototypeof\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\setprototypeof\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\setprototypeof\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\setprototypeof\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\http-errors\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\mime\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\mime\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\mime\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\mime\build\build.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\mime\build\test.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\mime\cli.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\mime\mime.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\mime\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\mime\types.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\ms\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\ms\History.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\ms\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\ms\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\ms\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\ms\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\statuses\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\statuses\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\statuses\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\statuses\codes.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\statuses\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\node_modules\statuses\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\send\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\serve-static\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\serve-static\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\serve-static\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\serve-static\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\serve-static\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\media-typer\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\media-typer\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\media-typer\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\media-typer\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\media-typer\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\mime-types\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\mime-types\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\mime-types\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\mime-types\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\db.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\node_modules\mime-types\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\type-is\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\utils-merge\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\utils-merge\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\utils-merge\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\utils-merge\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\utils-merge\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\vary\HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\vary\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\vary\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\vary\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\node_modules\vary\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\lesson\node.js\node_modules\express\package.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/controller/admin/admin.js" afterPath="$PROJECT_DIR$/node.js/project/blog/controller/admin/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/app.js" afterPath="$PROJECT_DIR$/node.js/project/blog/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js" afterPath="$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/doc/blog.sql" afterPath="$PROJECT_DIR$/node.js/project/blog/doc/blog.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_form.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/module/db_mysql.js" afterPath="$PROJECT_DIR$/node.js/project/blog/module/db_mysql.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/module/db_mysql_pool.js" afterPath="$PROJECT_DIR$/node.js/project/blog/module/db_mysql_pool.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/pages/public/header.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/pages/public/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/pages/blog/index.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/pages/blog/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/package.json" afterPath="$PROJECT_DIR$/node.js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/module/router.js" afterPath="$PROJECT_DIR$/node.js/project/blog/module/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/static/css/style.css" afterPath="$PROJECT_DIR$/node.js/project/blog/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,41 +324,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node.js/project/blog/module/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="labs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/pages/labs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="admin.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/admin/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/output/2017022815214618663/test/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27753305">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.80099505">
+              <caret line="216" column="12" selection-start-line="216" selection-start-column="12" selection-end-line="216" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -79,16 +350,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/node.js/project/221/controller/home/home.js" />
-        <option value="$PROJECT_DIR$/node.js/project/221/static/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/node.js/project/221/views/pages/public/layout.html" />
-        <option value="$PROJECT_DIR$/node.js/project/221/views/pages/public/footer.html" />
-        <option value="$PROJECT_DIR$/node.js/project/221/static/css/style.css" />
-        <option value="$PROJECT_DIR$/node.js/project/221/views/pages/home/index.html" />
-        <option value="$PROJECT_DIR$/node.js/project/221/views/pages/blog/blog.html" />
-        <option value="$PROJECT_DIR$/node.js/project/221/views/pages/labs/labs.html" />
-        <option value="$PROJECT_DIR$/node.js/project/221/views/pages/about.html" />
-        <option value="$PROJECT_DIR$/node.js/project/221/views/pages/labs/index.html" />
         <option value="$PROJECT_DIR$/node.js/project/221/views/pages/about/index.html" />
         <option value="$PROJECT_DIR$/node.js/project/221/views/pages/reg/reg.html" />
         <option value="$PROJECT_DIR$/node.js/project/221/module/db_mysql.js" />
@@ -114,22 +375,32 @@
         <option value="$PROJECT_DIR$/node.js/project/221/views/admin/blog/blog_form.html" />
         <option value="$PROJECT_DIR$/node.js/project/221/controller/pages/blog.js" />
         <option value="$PROJECT_DIR$/node.js/project/221/views/pages/blog/index.html" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/module/db_mysql_pool.js" />
         <option value="$PROJECT_DIR$/node.js/project/blog/module/global.inc.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html" />
         <option value="$PROJECT_DIR$/node.js/project/221/controller/admin/admin.js" />
         <option value="$PROJECT_DIR$/node.js/project/221/views/admin/labs/labs_list.html" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/app.js" />
         <option value="$PROJECT_DIR$/node.js/project/blog/views/output/test/index.html" />
         <option value="$PROJECT_DIR$/node.js/lesson/fs/app_4.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/module/router.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/controller/admin/admin.js" />
         <option value="$PROJECT_DIR$/node.js/project/blog/views/pages/labs/index.html" />
         <option value="$PROJECT_DIR$/node.js/project/blog/controller/pages/labs.js" />
         <option value="$PROJECT_DIR$/node.js/project/blog/views/output/2017022819470534291/test/index.html" />
         <option value="$PROJECT_DIR$/node.js/project/blog/views/output/2017022819493938843/test/index.html" />
         <option value="$PROJECT_DIR$/node.js/project/blog/views/output/2017022815214618663/test/index.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/pages/blog/blog_details.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/pages/public/header.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/app.js" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_form.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/doc/demo.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/module/router.js" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/pages/blog/index.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/static/css/style.css" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/pages/public/page.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/module/db_mysql.js" />
+        <option value="$PROJECT_DIR$/node.js/node_modules/express/lib/application.js" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/config/settings.js" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/module/db_mysql_pool.js" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/controller/admin/admin.js" />
       </list>
     </option>
   </component>
@@ -264,6 +535,62 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node.js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node.js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -277,7 +604,7 @@
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/wamp/www/works/workspace/fb-node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="recentsLimit" value="5" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -287,10 +614,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\lesson\node.js\project\blog\doc" />
-      <recent name="E:\lesson\node.js\project\blog\controller\pages" />
+      <recent name="E:\lesson\node.js\project\blog\views\pages\public" />
+      <recent name="E:\lesson\node.js\project\blog\static\img\labs" />
       <recent name="E:\lesson\node.js\project\blog\views\pages\blog" />
-      <recent name="E:\lesson\node.js\project\221" />
-      <recent name="E:\lesson\node.js\project\221\doc" />
+      <recent name="E:\lesson\node.js\project\blog\controller\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\lesson\node.js\project\221\views" />
@@ -374,16 +701,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16243961" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42069742" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28683916" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -412,6 +739,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/output/2017022815214618663/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://E:/墨香阁/源码/www.yshome.net.cn/blog-master/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -514,23 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7065421">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/module/db_mysql_pool.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20309478">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.533334">
-          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -538,7 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72895277">
           <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -546,7 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5712">
           <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -554,7 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -562,7 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.92941177">
           <caret line="33" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -570,7 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6384">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,7 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.328">
           <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -586,23 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.5376">
           <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.168">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/module/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -610,23 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.25826445">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/pages/labs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,15 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.661157">
           <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/221/controller/admin/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2603306">
-          <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46255508">
           <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,15 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46255508">
           <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/admin/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,7 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.6">
           <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -682,14 +939,176 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46255508">
           <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/output/2017022815214618663/test/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/pages/labs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73966944">
+          <caret line="39" column="2" selection-start-line="28" selection-start-column="0" selection-end-line="39" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/pages/public/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7400881">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/pages/blog/blog_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41629955">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/static/img/demo/1-1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/221/views/admin/blog/blog_form.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27753305">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <caret line="36" column="25" selection-start-line="35" selection-start-column="16" selection-end-line="40" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/221/controller/admin/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34917355">
+          <caret line="89" column="44" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/doc/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.607438">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.041322313">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53700787">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/pages/public/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.8">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/lyb_node/model/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0992126">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/module/db_mysql.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/module/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/module/db_mysql_pool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65174127">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/config/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5572139">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/pages/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4764398">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41791046">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/admin/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80099505">
+          <caret line="216" column="12" selection-start-line="216" selection-start-column="12" selection-end-line="216" selection-end-column="12" />
           <folding />
         </state>
       </provider>

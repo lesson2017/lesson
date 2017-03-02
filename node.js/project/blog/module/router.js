@@ -12,14 +12,16 @@ var reg = require('../controller/pages/reg');
 var admin = require('../controller/admin/admin');
 //解析表单提交
 var bodyParser = require('body-parser');
-var jsonParser = bodyParser.json();
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
+var jsonParser = bodyParser.json({limit:'5mb'}); //发送json
+var urlencodedParser = bodyParser.urlencoded({ limit:'5mb',extended: false });
+
 module.exports = function (app) {
     //home
     app.get('/',home.index);
 
     //blog
-    app.get('/blog',blog.index);
+    app.get('/blog/:page?',blog.index);
+    app.get('/blogDetails/:id',blog.blogDetails);
 
     //labs
     app.get('/labs',labs.index);

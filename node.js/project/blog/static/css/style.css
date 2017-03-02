@@ -9,3 +9,24 @@
     width: 252px;
     height: 336px !important;
 }
+/*pages*/
+.jumpPage input,
+.jumpPage button{
+    outline: none;
+    display: block;
+    height: 24px;
+    float: left;
+}
+.jumpPage input{
+    outline: none;
+    width: 60px;
+    margin-right: 5px;
+    padding: 4px 5px;
+}
+.jumpPage button{
+    line-height: 13px;
+}
+.pagination>li.jumpPage>span{
+    padding: 4px 10px;
+}
+/*pages /*/

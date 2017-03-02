@@ -6,7 +6,7 @@
 
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-    host : 'localhost',
+    host : '127.0.0.1',
     port : 3306,
     database : 'blog',
     user : 'root',
@@ -18,7 +18,7 @@ function connectDB(callback)
 {
     connection.connect(function (err) {
         if(err){
-            console.log("MySql连接失败!");
+            console.log("MySql连接失败:"+err.message);
             //关闭数据库
             connection.end();
             return;
@@ -27,7 +27,7 @@ function connectDB(callback)
         console.log("MySql连接成功!");
         callback();
 
-        //关闭链接
+        /*//关闭链接
         connection.end(function (err) {
             if(err)
             {
@@ -35,7 +35,7 @@ function connectDB(callback)
                 return;
             };
             console.log("关闭mysql数据库操作成功");
-        });
+        });*/
     });
 };
 

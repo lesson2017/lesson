@@ -13,7 +13,7 @@ var sd = require('silly-datetime');
 var unzip = require('unzip');
 //blog
 exports.blogList = function (req,res) {
-    var sql = 'SELECT * FROM blog_list';
+    var sql = 'SELECT * FROM blog_list ORDER BY datetime DESC';
     db.query(sql, function (err,rows) {
         if(err)
         {
@@ -85,19 +85,21 @@ exports.blogDel = function (req,res) {
 exports.doEdit = function (req,res) {
     var id = req.params.id || '';
     var formData = {
+        "id" : Date.now(),
         "title" : req.body.title,
         "content" : req.body.editorValue,
         "author" : "ghost",
-        "classify" : req.body.classify
+        "classify" : req.body.classify,
+        "description" : req.body.description
     };
     if(!id)
     {
         //增加数据
-        var sql = 'INSERT INTO blog_list(title,content,author,datetime,classify) VALUES(?,?,?,now(),?)';
-        var param = [formData.title,formData.content,formData.author,formData.classify];
+        var sql = "INSERT INTO blog_list(id,title,content,author,datetime,classify,description) VALUES(?,?,?,?,now(),?,?)";
+        var param = [formData.id,formData.title,formData.content,formData.author,formData.classify,formData.description];
     }else{
         //更新数据 UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值
-        var sql = "UPDATE blog_list SET title = '"+ formData.title +"',content='"+ formData.content +"',datetime=now(),classify='"+ formData.classify +"' WHERE id = '"+ id + "'";
+        var sql = "UPDATE blog_list SET title = '"+ formData.title +"',content='"+ formData.content +"',datetime=now(),classify='"+ formData.classify +"',description='"+ formData.description +"' WHERE id = '"+ id + "'";
     };
     db.query(sql,param, function (err,rows) {
         if(err)
@@ -111,11 +113,21 @@ exports.doEdit = function (req,res) {
 
 //labs
 exports.labsList = function (req,res) {
-    res.layout('./admin/public/layout', {title: "Demo列表"}, {
-        body: {
-            block: "./admin/labs/labs_list",
-            data: {}
-        }
+    var sql = "SELECT * FROM blog_labs";
+    db.query(sql,function (err,rows) {
+        if(err)
+        {
+            console.log("error:"+err.message);
+            return false;
+        };
+        res.layout('./admin/public/layout', {title: "Demo列表"}, {
+            body: {
+                block: "./admin/labs/labs_list",
+                data: {
+                    "data" : rows
+                }
+            }
+        });
     });
 };
 exports.labsUpload = function (req,res) {
@@ -183,6 +195,7 @@ exports.labsDoUpload = function (req,res) {
 
 exports.labsDel = function (req,res) {};
 
+//博客解压压缩包
 exports.labsUnzip = function (req,res) {
     var id = req.params.id;
     //创建文件夹

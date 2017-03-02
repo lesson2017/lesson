@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>globalCompositeOperation动画</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            font-family: '楷体';
+        }
+        #wrap{
+            position: relative;
+            display: block;
+            margin: 50px auto 0;
+            width: 1280px;
+        }
+        canvas{
+            box-shadow: 0 0 30px #555;
+            display: block;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        .btn-wrap{
+            position: absolute;
+            width: 380px;
+            background-color: rgba(93, 123, 237, 0.5);
+            border-radius: 6px;
+            bottom: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        a{
+            padding: 8px 16px;
+            background: #6cf;
+            display: inline-block;
+            color: #fff;
+            width: 130px;
+            text-decoration: none;
+            border-radius: 6px;
+            text-align: center;
+            margin: 6px 2px;
+            transition: all 0.3s;
+        }
+        a:hover{
+            background-color: #fa0;
+        }
+        a:active{
+            background-color: #f60;
+        }
+
+        .highlight{
+            background-color: #fa0;
+        }
+        .highlight:hover{
+            background-color: #fa0;
+        }
+        .highlight:active{
+            background-color: #fa0;
+        }
+
+        .disabled{
+            background-color: #aaa;
+            color: #555;
+            cursor: default;
+        }
+        .disabled:hover{
+            background-color: #aaa;
+            color: #555;
+        }
+        .disabled:active{
+            background-color: #aaa;
+            color: #555;
+        }
+
+        .desc{
+            background-color: #895ded;
+            padding: 8px 16px;
+            text-align: center;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 13px;
+        }
+
+        img{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <canvas id="cnavas"></canvas>
+    <div class="btn-wrap">
+        <p class="desc">globalCompositeOperation属性：<span id="desc">lighter</span></p>
+        <a href="#">停止动画</a>
+        <a href="#">背景切换</a>
+        <a href="#">source-over</a>
+        <a href="#">destination-over</a>
+        <a href="#" class="highlight">lighter</a>
+        <a href="#">xor</a>
+    </div>
+</div>
+<img src="http://www.yshome.net.cn/img/7.jpg" id="img">
+
+<!-- javascript -->
+<script type="text/javascript">
+    var balls = [];
+    var ctrlStatus = { type: 'lighter', stop: false, bgdIndex: 1, bgdBo: false };
+    var bgdPath = [
+        'http://www.yshome.net.cn/img/7.jpg',
+        'http://www.yshome.net.cn/img/8.jpg',
+        'http://www.yshome.net.cn/img/9.jpg',
+        'http://www.yshome.net.cn/img/10.jpg',
+        'http://www.yshome.net.cn/img/11.jpg',
+        'http://www.yshome.net.cn/img/12.jpg'
+    ];
+
+    (function(){
+        var vendors = ['webkit', 'moz'];
+        for(var i = 0; i < vendors.length && !window.requestAnimationFrame; i++) {
+            window.requestAnimationFrame = window[vendors[i] + 'RequestAnimationFrame'];
+            window.cancelAnimationFrame = window[vendors[i] + 'CancelAnimationFrame'] || window[vendors[i] + 'CancelRequestAnimationFrame'];
+        }
+    })();
+
+    window.onload = function() {
+        document.body.style.display = 'block';
+        var canvas = document.getElementById('cnavas');
+
+        canvas.style.opacity = 1;
+
+        var ctx = canvas.getContext('2d');
+        canvas.width = 1280;
+        canvas.height = 800;
+
+        addBalls(canvas.width, canvas.height);
+        init( ctx, canvas.width, canvas.height );
+
+        var oWrap = document.getElementById('wrap').getElementsByClassName('btn-wrap')[0];
+        oWrap.onclick = function(ev) {
+            var e = ev || event;
+            var target = e.target;
+            var text = target.innerHTML;
+
+            if( target.nodeName != 'A' ) return;
+            if( !/[^\u4e00-\u9fa5]/g.test(text) ) {
+                if( text == '停止动画' || text == '开始动画' ) {
+                    switchMove( target, text );
+                } else if( text == '背景切换' ) {
+                    switchBgd( target );
+                }
+                return;
+            }
+
+            ctrlStatus.type = text;
+            switchHighlight( target, text );
+        };
+    };
+
+    function init(ctx, w, h) {
+        if( !ctrlStatus.stop ) draw( ctx, w, h );
+        requestAnimationFrame(function() {
+            init(ctx, w, h);
+        });
+    }
+
+    function switchHighlight( target, text ) {
+        var oDesc = document.getElementById('desc');
+        var oAs = target.parentNode.getElementsByTagName('a');
+        var len = oAs.length;
+        var oldClass = '';
+        var reg = /^\shighlight$|^highlight\s$|^highlight$/g;
+        for( i=0; i<len; i++ ) {
+            oldClass = oAs[i].className;
+            oAs[i].className = oldClass.replace(reg, '');
+        }
+        target.className += ' highlight';
+        oDesc.innerHTML = text;
+    }
+
+    function switchMove( target, text ) {
+        var oAs = target.parentNode.getElementsByTagName('a');
+        var len = oAs.length;
+        var oldClass = '';
+        var i;
+
+        if( text == '停止动画' ) {
+            target.innerHTML = '开始动画';
+            for( i=1; i<len; i++ ) oAs[i].className += ' disabled';
+        } else {
+            target.innerHTML = '停止动画';
+            for( i=1; i<len; i++ ) {
+                oldClass = oAs[i].className;
+                oAs[i].className = '';
+                if( oldClass.indexOf('highlight') != -1 ) oAs[i].className = 'highlight';
+            }
+        }
+        ctrlStatus.stop = !ctrlStatus.stop;
+    }
+
+    function switchBgd( target ) {
+        ctrlStatus.bgdBo = false;
+        var oAs = target.parentNode.getElementsByTagName('a');
+        var path = bgdPath[ctrlStatus.bgdIndex];
+
+        oAs[0].className += ' disabled';
+        oAs[1].className += ' disabled';
+
+        var img = new Image();
+        img.src = path;
+        img.onload = function() {
+            ctrlStatus.bgdBo = true;
+            var oImg = document.getElementById('img');
+            oImg.src = path;
+            oAs[0].className = '';
+            oAs[1].className = '';
+        };
+
+        ctrlStatus.bgdIndex++;
+        if( ctrlStatus.bgdIndex > bgdPath.length-1 ) ctrlStatus.bgdIndex = 0;
+    }
+
+    function addBalls(w, h) {
+        for( var i=0; i<50; i++ ) {
+            var r = Math.random()*30+20;
+            var x = Math.random()*(w-r*2)+r;
+            var y = Math.random()*(h-r*2)+r;
+            var vx = Math.random() > 0.5 ? -(Math.random()*1.8+0.2) : Math.random()*1.8+0.2;
+            var vy = Math.random() > 0.5 ? -(Math.random()*1.8+0.2) : Math.random()*1.8+0.2;
+            var c = 'rgb('+parseInt(Math.random()*255)+','+
+                    parseInt(Math.random()*255)+','+
+                    parseInt(Math.random()*255)+')';
+
+            balls.push({ r: r, x: x, y: y, vx: vx, vy: vy, c: c });
+        }
+    }
+
+    function draw(ctx, w, h) {
+        ctx.clearRect(0, 0, w, h);
+        drawImage(ctx, w, h);
+
+        ctx.globalCompositeOperation = ctrlStatus.type;
+
+        var len = balls.length;
+        for(var i=0; i<len; i++) {
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(balls[i].x, balls[i].y, balls[i].r, 0, Math.PI*2);
+            ctx.closePath();
+            ctx.fillStyle = balls[i].c;
+            ctx.fill();
+            ctx.restore();
+        }
+        updateBalls(w, h);
+    }
+
+    function drawImage(ctx, w, h) {
+        var img = document.getElementById('img');
+        ctx.drawImage(img, 0, 0, w, h);
+    }
+
+    function updateBalls(w, h) {
+        var len = balls.length;
+        for(var i=0; i<len; i++) {
+            balls[i].x += balls[i].vx;
+            balls[i].y += balls[i].vy;
+
+            if( balls[i].x-balls[i].r < 0 ) {
+                balls[i].x = balls[i].r;
+                balls[i].vx = -balls[i].vx;
+            } else if( balls[i].x > w-balls[i].r ) {
+                balls[i].x = w-balls[i].r;
+                balls[i].vx = -balls[i].vx;
+            }
+
+            if( balls[i].y-balls[i].r < 0 ) {
+                balls[i].y = balls[i].r;
+                balls[i].vy = -balls[i].vy;
+            } else if( balls[i].y > h-balls[i].r ) {
+                balls[i].y = h-balls[i].r;
+                balls[i].vy = -balls[i].vy;
+            }
+        }
+    }
+</script>
+</body>
+</html>

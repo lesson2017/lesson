@@ -5,24 +5,69 @@
  * */
 var db = require('../../module/db_mysql_pool');
 var global = require('../../module/global.inc');
+var settings = require('../../config/settings');
 exports.index = function (req,res) {
-    var sql = "SELECT * FROM blog_list";
+    //分页
+    var currentPage = req.params.page || 1; //当前页
+    var itemTotal = 0; //总条数
+    var pageNum = settings.pages.page_num;
+
+    var sql = "SELECT COUNT(id) FROM blog_list";
+
+    //查询总数
+    db.query(sql, function (err,rows) {
+        //获取总共有多少条数据
+        itemTotal = rows[0]["COUNT(id)"];
+
+        //查询分页数据
+        var sql = "SELECT * FROM blog_list ORDER BY datetime DESC limit "+ (currentPage-1) * pageNum +"," + pageNum;
+        /*
+        * currentPage 1,2,3,4
+        * (1-1)*2 = 0
+        * (2-1)*2 = 2
+        * (3-1)*2 = 4
+        * (4-1)*2 = 6
+        * 0,2 = 1,2
+        * 2,2 = 3,4
+        * 4,2 = 5,6
+        * 6,2 = 7,8
+        * */
+        db.query(sql,function (err,rows) {
+            rows.forEach(function (item) {
+                item.datetime = global.format(item.datetime,'yyyy-MM-dd HH:mm:ss');
+            });
+            res.layout('./pages/public/layout', {title:"博客列表"}, {
+                body: {
+                    block: "./pages/blog/index",
+                    data: {
+                        data : rows,
+                        pages : {
+                            currentPage : parseInt(currentPage),
+                            totalPage : parseInt(Math.ceil(itemTotal / pageNum)),
+                            typePage : 'blog'
+                        }
+                    }
+                }
+            });
+        });
+    });
+};
+
+//详情
+exports.blogDetails = function (req,res) {
+    var id = req.params.id;
+    var sql = "SELECT * FROM blog_list WHERE id='"+ id +"'";
     db.query(sql,function (err,rows) {
-        if(err)
-        {
-            console.log("error:"+err.message);
-            return false;
-        };
         rows.forEach(function (item) {
             item.datetime = global.format(item.datetime,'yyyy-MM-dd HH:mm:ss');
         });
-        res.layout('./pages/public/layout', {title:"博客列表"}, {
+        res.layout('./pages/public/layout', {title: id}, {
             body: {
-                block: "./pages/blog/index",
+                block: "./pages/blog/blog_details",
                 data: {
-                    data : rows
+                    data : rows[0]
                 }
             }
         });
     });
-}
+};

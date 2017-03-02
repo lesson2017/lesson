@@ -14,7 +14,6 @@ var app = express();
 
 //使用cookie中间件
 app.use(cookieParser());
-
 //使用express-session中间件
 app.use(session({
     secret: 'keyboard cat',
@@ -44,7 +43,6 @@ app.set('view engine','html');
 
 //调用中间件ejs_layouts
 app.use(ejs_layouts.express);
-
 /*路由处理*/
 router(app);
 

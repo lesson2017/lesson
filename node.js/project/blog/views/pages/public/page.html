@@ -1,0 +1,42 @@
+<div class="text-center">
+    <ul class="pagination">
+        <%if(pages.currentPage === 1){%>
+            <li class="disabled"><span>上一页</span></li>
+        <%}else{%>
+            <li><a href="/<%= pages.typePage%>/<%= pages.currentPage - 1 %>">上一页</a></li>
+        <%}%>
+
+        <li class="disabled"><span>第<%= pages.currentPage%>页</span></li>
+        <% var isHiddenExist = 0;%>
+        <%for(var i=1;i<=pages.totalPage;i++){%>
+            <%if(i == pages.currentPage){%>
+                <li class="disabled"><a href="javascript:;"><%= i%></a></li>
+            <%}else{%>
+                <%if(i < 4 || i < (pages.currentPage + 3) && i > (pages.currentPage - 3) || i > (pages.totalPage - 3)){%>
+                    <li><a href="/<%= pages.typePage%>/<%= i%>"><%= i%></a></li>
+                    <% isHiddenExist = 0;%>
+                <%}else{%>
+                    <%if(isHiddenExist == 0){%>
+                        <li class="disabled"><a href="javascript:;">...</a></li>
+                        <% isHiddenExist = 1;%>
+                    <%}%>
+                <%}%>
+            <%}%>
+        <%}%>
+        <li class="disabled"><span>共<%= pages.totalPage%>页</span></li>
+
+        <%if(pages.currentPage === pages.totalPage){%>
+            <li class="disabled"><span>下一页</span></li>
+        <%}else{%>
+            <li><a href="/<%= pages.typePage%>/<%= pages.currentPage + 1 %>">下一页</a></li>
+        <%}%>
+        <li class="jumpPage">
+            <span>
+               <form method="/<%= pages.typePage%>" class="clearfix">
+                   <input type="text" class="form-control" name="page"/>
+                   <button type="submit" class="btn btn-danger btn-sm">跳转</button>
+               </form>
+            </span>
+        </li>
+    </ul>
+</div>
