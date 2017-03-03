@@ -24,15 +24,19 @@
                     <td><%= item.author%></td>
                     <td><%= item.pv%></td>
                     <td>
-                        <a href="javascript:;"class="delBtn">删除</a>
-                        <a href="#" title="1">编辑</a>
-                        <a href="/admin/labs/unzip/2017022815214618663" title="1">解压</a>
+                        <a href="javascript:;"class="delBtn" data-id="<%= item.id%>">删除</a>
+                        <a href="/admin/labs/demo/upload/<%= item.id%>">编辑</a>
+                        <%if(item.status === '0'){%>
+                        <a href="javascript:;" data-id="<%= item.id%>" class="unzipBtn">解压</a>
+                        <%}%>
                     </td>
                 </tr>
                 <%})%>
                 </tbody>
             </table>
+            <%include ../../pages/public/page.html%>
         </div>
     </div>
 </div>
 <script src="/js/libs/layer/layer.js"></script>
+<script src="/js/labs_module.js"></script>

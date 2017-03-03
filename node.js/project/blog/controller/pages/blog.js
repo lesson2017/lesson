@@ -13,9 +13,9 @@ exports.index = function (req,res) {
     var pageNum = settings.pages.page_num;
 
     var sql = "SELECT COUNT(id) FROM blog_list";
-
+    var param = [];
     //查询总数
-    db.query(sql, function (err,rows) {
+    db.query(sql,param,function (rows) {
         //获取总共有多少条数据
         itemTotal = rows[0]["COUNT(id)"];
 
@@ -32,11 +32,18 @@ exports.index = function (req,res) {
         * 4,2 = 5,6
         * 6,2 = 7,8
         * */
-        db.query(sql,function (err,rows) {
+        var param = [];
+        db.query(sql,param,function (rows) {
             rows.forEach(function (item) {
                 item.datetime = global.format(item.datetime,'yyyy-MM-dd HH:mm:ss');
             });
-            res.layout('./pages/public/layout', {title:"博客列表"}, {
+
+            //header data
+            var header_info = {
+                title : "博客-星际实验室！",
+                nickname : req.session.nickname || ''
+            };
+            res.layout('./pages/public/layout', header_info, {
                 body: {
                     block: "./pages/blog/index",
                     data: {
@@ -57,11 +64,18 @@ exports.index = function (req,res) {
 exports.blogDetails = function (req,res) {
     var id = req.params.id;
     var sql = "SELECT * FROM blog_list WHERE id='"+ id +"'";
-    db.query(sql,function (err,rows) {
+    var param = [];
+    db.query(sql,param,function (rows) {
         rows.forEach(function (item) {
             item.datetime = global.format(item.datetime,'yyyy-MM-dd HH:mm:ss');
         });
-        res.layout('./pages/public/layout', {title: id}, {
+
+        //header data
+        var header_info = {
+            title : "博客-星际实验室！",
+            nickname : req.session.nickname || ''
+        };
+        res.layout('./pages/public/layout', header_info, {
             body: {
                 block: "./pages/blog/blog_details",
                 data: {

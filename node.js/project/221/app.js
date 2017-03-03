@@ -67,9 +67,9 @@ app.use(function(err, req, res, next) {
 });
 
 //设置监听端口
-app.listen(5000, function (err) {
+app.listen(7000, function (err) {
     if (err) {
         throw err;
     };
-    console.log("The server is started,listen on port 5000");
+    console.log("The server is started,listen on port 7000");
 });

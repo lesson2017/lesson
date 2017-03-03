@@ -76,4 +76,18 @@ exports.fnUploadDeal = function (file,newFileName,res){
         };
         next;
     });
-}
+};
+
+//登录状态检测
+//req.cookies.isLogin
+exports.fnLoginCheck = function (req,res,next) {
+    var nickname = req.session.nickname || req.cookies.nickname;
+    if(nickname)
+    {
+        req.session.nickname = nickname;
+        next();
+    }else{
+        res.clearCookie('nickname', { path: '/' });
+        return res.redirect('/login');
+    };
+};

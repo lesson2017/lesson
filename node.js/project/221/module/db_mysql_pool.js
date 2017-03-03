@@ -44,6 +44,29 @@ var pool = mysql.createPool({
 //执行sql
 exports.query = function (sql,param,callback) {
     pool.getConnection(function (err,connection) {
-        connection.query(sql,param, callback);
+        //connection.query(sql,param, callback);
+
+        connection.query(sql,param, function (err,rows) {
+            if(err)
+            {
+                console.log('error:'+err.message);
+                return;
+            };
+            console.log(rows.affectedRows);
+            connection.release(); //释放连接
+        });
+    });
+};
+
+exports.query = function (sql,param,callback) {
+    pool.getConnection(function (err,connection) {
+        connection.query(sql,param, function (err, rows) {
+            if (err) {
+                console.log('error:' + err.message);
+                return;
+            };
+            callback(rows);
+        });
+        connection.release(); //释放连接一定要在这里是否链接
     });
 };

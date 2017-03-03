@@ -10,6 +10,7 @@ var about = require('../controller/pages/about');
 var login = require('../controller/pages/login');
 var reg = require('../controller/pages/reg');
 var admin = require('../controller/admin/admin');
+
 //解析表单提交
 var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json();

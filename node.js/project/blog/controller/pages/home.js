@@ -4,7 +4,11 @@
  * @description : Home pages router
  * */
 exports.index = function (req,res,next) {
-    res.layout('./pages/public/layout', {title:"首页","nav":"home"}, {
+    var header_info = {
+        title : "欢迎访问星际实验室！",
+        nickname : req.session.nickname || ''
+    };
+    res.layout('./pages/public/layout', header_info, {
         body: {
             block: "./pages/home/index",
             data: {

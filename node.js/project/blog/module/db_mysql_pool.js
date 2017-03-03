@@ -22,7 +22,7 @@ var pool = mysql.createPool({
 //执行sql
 exports.query = function (sql,param,callback) {
     pool.getConnection(function (err,connection) {
-        connection.query(sql,param, function (err, rows) {
+        connection.query(sql,param,function (err, rows) {
             if (err) {
                 console.log('error:' + err.message);
                 return;

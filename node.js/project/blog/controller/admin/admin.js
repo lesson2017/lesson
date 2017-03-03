@@ -130,6 +130,7 @@ exports.labsList = function (req,res) {
         });
     });
 };
+
 exports.labsUpload = function (req,res) {
     res.layout('./admin/public/layout', {title: "发布Demo"}, {
         body: {

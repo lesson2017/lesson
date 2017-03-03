@@ -83,6 +83,7 @@ exports.blogDel = function (req,res) {
 exports.doEdit = function (req,res) {
     var id = req.params.id || '';
     var formData = {
+        "id" : Date.now(),
         "title" : req.body.title,
         "content" : req.body.editorValue,
         "author" : "ghost",
@@ -92,13 +93,15 @@ exports.doEdit = function (req,res) {
     if(!id)
     {
         //增加数据
-        var sql = 'INSERT INTO blog_list(title,content,author,datetime,classify,description) VALUES(?,?,?,now(),?,?)';
-        var param = [formData.title,formData.content,formData.author,formData.classify,formData.description];
+        var sql = 'INSERT INTO blog_list(id,title,content,author,datetime,classify,description) VALUES(?,?,?,?,now(),?,?)';
+        var param = [formData.id,formData.title,formData.content,formData.author,formData.classify,formData.description];
     }else{
         //更新数据 UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值
         var sql = "UPDATE blog_list SET title = '"+ formData.title +"',content='"+ formData.content +"',datetime=now(),classify='"+ formData.classify +"',description='"+ formData.description +"' WHERE id = '"+ id + "'";
     };
     db.query(sql,param, function (err,rows) {
+        console.log(err);
+        console.log(rows);
         if(err)
         {
             console.log("error:"+err.message);

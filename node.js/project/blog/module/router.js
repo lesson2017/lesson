@@ -9,7 +9,10 @@ var labs = require('../controller/pages/labs');
 var about = require('../controller/pages/about');
 var login = require('../controller/pages/login');
 var reg = require('../controller/pages/reg');
-var admin = require('../controller/admin/admin');
+var admin_blog = require('../controller/admin/blog'); //后台博客模块
+var admin_labs = require('../controller/admin/labs'); //后台实验室博客
+var global = require('../module/global.inc');
+
 //解析表单提交
 var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json({limit:'5mb'}); //发送json
@@ -17,14 +20,14 @@ var urlencodedParser = bodyParser.urlencoded({ limit:'5mb',extended: false });
 
 module.exports = function (app) {
     //home
-    app.get('/',home.index);
+    app.get('/',global.fnLoginCheck,home.index);
 
     //blog
     app.get('/blog/:page?',blog.index);
     app.get('/blogDetails/:id',blog.blogDetails);
 
     //labs
-    app.get('/labs',labs.index);
+    app.get('/labs/:page?',labs.index);
     app.get('/labs/demo/:id',labs.labsDemo);
 
     //about
@@ -39,15 +42,15 @@ module.exports = function (app) {
     app.post('/doReg',urlencodedParser,reg.doReg);
 
     //admin blog
-    app.get('/admin/blog/list',admin.blogList);
-    app.get('/admin/blog/publish/:id?',admin.blogPublish);
-    app.post('/admin/blog/del',urlencodedParser,admin.blogDel);
-    app.post('/admin/blog/doEdit/:id?',urlencodedParser,admin.doEdit);
+    app.get('/admin/blog/list/:page?',admin_blog.blogList);
+    app.get('/admin/blog/publish/:id?',admin_blog.blogPublish);
+    app.post('/admin/blog/del',urlencodedParser,admin_blog.blogDel);
+    app.post('/admin/blog/doEdit/:id?',urlencodedParser,admin_blog.doEdit);
 
     //admin labs
-    app.get('/admin/labs/list',admin.labsList);
-    app.get('/admin/labs/demo/upload',admin.labsUpload);
-    app.get('/admin/labs/unzip/:id',admin.labsUnzip);
-    app.post('/admin/labs/doUpload',urlencodedParser,admin.labsDoUpload);
-    app.post('/admin/labs/del',urlencodedParser,admin.labsDel);
+    app.get('/admin/labs/list/:page?',admin_labs.labsList);
+    app.get('/admin/labs/demo/upload/:id?',admin_labs.labsUpload);
+    app.post('/admin/labs/unzip',urlencodedParser,admin_labs.labsUnzip); //解压压缩包
+    app.post('/admin/labs/doUpload/:id?',urlencodedParser,admin_labs.labsDoUpload);
+    app.post('/admin/labs/del',urlencodedParser,admin_labs.labsDel);
 }
