@@ -10,10 +10,25 @@ Target Server Type    : MYSQL
 Target Server Version : 50520
 File Encoding         : 65001
 
-Date: 2017-03-03 18:59:12
+Date: 2017-03-06 18:54:00
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for blog_classify
+-- ----------------------------
+DROP TABLE IF EXISTS `blog_classify`;
+CREATE TABLE `blog_classify` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `className` varchar(20) DEFAULT NULL,
+  `datetime` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of blog_classify
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for blog_labs
@@ -99,4 +114,6 @@ CREATE TABLE `blog_user` (
 -- ----------------------------
 -- Records of blog_user
 -- ----------------------------
-INSERT INTO `blog_user` VALUES ('1488534837483', 'wangpengkai@beecredit.com', '连玉', '0', '111111', '\"JavaScript\"', '2017-03-03 17:53:57', '192.168.1.15', '0');
+INSERT INTO `blog_user` VALUES ('1488534837483', 'wangpengkai@beecredit.com', '连玉', '0', '111111', '\"JavaScript\"', '2017-03-03 17:53:57', '192.168.1.15', '1');
+INSERT INTO `blog_user` VALUES ('1488771675642', '2367383429@qq.com', '连香', '0', '111111', '[\"Java\",\"AngularJs\"]', '2017-03-06 11:41:15', '192.168.1.15', '0');
+INSERT INTO `blog_user` VALUES ('1488783488498', 'liuhao@beecredit.com', '连翘', '0', '111111', '[\"PHP\",\"Java\"]', '2017-03-06 14:58:08', '192.168.1.15', '0');
