@@ -81,13 +81,12 @@ exports.fnUploadDeal = function (file,newFileName,res){
 //登录状态检测
 //req.cookies.isLogin
 exports.fnLoginCheck = function (req,res,next) {
-    var nickname = req.session.nickname || req.cookies.nickname;
-    if(nickname)
+    var nickname = req.session.nickname;
+    var role = req.session.role;
+    if(nickname && role === '1')
     {
-        req.session.nickname = nickname;
         next();
     }else{
-        res.clearCookie('nickname', { path: '/' });
         return res.redirect('/login');
     };
 };

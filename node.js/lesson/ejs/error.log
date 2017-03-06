@@ -1,0 +1,88 @@
+D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441
+      this.templateText.replace(/[ \t]*<%_/gm, '<%_').replace(/_%>[ \t]*/gm, '_%>');
+                        ^
+
+TypeError: this.templateText.replace is not a function
+    at Object.Template.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441:25)
+    at Object.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:289:16)
+    at handleCache (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:148:16)
+    at Object.exports.render (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:316:10)
+    at D:\wamp\www\node.js\lesson\ejs\app_2.js:27:28
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441
+      this.templateText.replace(/[ \t]*<%_/gm, '<%_').replace(/_%>[ \t]*/gm, '_%>');
+                        ^
+
+TypeError: this.templateText.replace is not a function
+    at Object.Template.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441:25)
+    at Object.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:289:16)
+    at handleCache (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:148:16)
+    at Object.exports.render (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:316:10)
+    at D:\wamp\www\node.js\lesson\ejs\app_2.js:27:28
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441
+      this.templateText.replace(/[ \t]*<%_/gm, '<%_').replace(/_%>[ \t]*/gm, '_%>');
+                        ^
+
+TypeError: this.templateText.replace is not a function
+    at Object.Template.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441:25)
+    at Object.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:289:16)
+    at handleCache (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:148:16)
+    at Object.exports.render (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:316:10)
+    at D:\wamp\www\node.js\lesson\ejs\app_2.js:27:28
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441
+      this.templateText.replace(/[ \t]*<%_/gm, '<%_').replace(/_%>[ \t]*/gm, '_%>');
+                        ^
+
+TypeError: this.templateText.replace is not a function
+    at Object.Template.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441:25)
+    at Object.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:289:16)
+    at handleCache (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:148:16)
+    at Object.exports.render (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:316:10)
+    at D:\wamp\www\node.js\lesson\ejs\app_2.js:27:28
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441
+      this.templateText.replace(/[ \t]*<%_/gm, '<%_').replace(/_%>[ \t]*/gm, '_%>');
+                        ^
+
+TypeError: this.templateText.replace is not a function
+    at Object.Template.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441:25)
+    at Object.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:289:16)
+    at handleCache (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:148:16)
+    at Object.exports.render (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:316:10)
+    at D:\wamp\www\node.js\lesson\ejs\app_2.js:27:28
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441
+      this.templateText.replace(/[ \t]*<%_/gm, '<%_').replace(/_%>[ \t]*/gm, '_%>');
+                        ^
+
+TypeError: this.templateText.replace is not a function
+    at Object.Template.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441:25)
+    at Object.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:289:16)
+    at handleCache (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:148:16)
+    at Object.exports.render (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:316:10)
+    at D:\wamp\www\node.js\lesson\ejs\app_2.js:27:28
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441
+      this.templateText.replace(/[ \t]*<%_/gm, '<%_').replace(/_%>[ \t]*/gm, '_%>');
+                        ^
+
+TypeError: this.templateText.replace is not a function
+    at Object.Template.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:441:25)
+    at Object.compile (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:289:16)
+    at handleCache (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:148:16)
+    at Object.exports.render (D:\wamp\www\node.js\node_modules\ejs\lib\ejs.js:316:10)
+    at D:\wamp\www\node.js\lesson\ejs\app_2.js:27:28
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+internal/child_process.js:374
+      throw errnoException(err, 'kill');
+      ^
+
+Error: kill ENOSYS
+    at exports._errnoException (util.js:870:11)
+    at ChildProcess.kill (internal/child_process.js:374:13)
+    at process.<anonymous> (C:\Users\Ghost\AppData\Roaming\npm\node_modules\supervisor\lib\supervisor.js:161:27)
+    at emitNone (events.js:67:13)
+    at process.emit (events.js:166:7)
+    at Signal.wrap.onsignal (node.js:804:46)

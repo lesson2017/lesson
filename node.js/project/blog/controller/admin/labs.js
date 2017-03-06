@@ -31,7 +31,14 @@ exports.labsList = function (req,res) {
             rows.forEach(function (item) {
                 item.datetime = global.format(item.datetime,'yyyy-MM-dd HH:mm:ss');
             });
-            res.layout('./admin/public/layout', {title: "Demo列表"}, {
+            //header data
+            var header_info = {
+                title : "实验室管理-星际实验室！",
+                nickname : req.session.nickname || '',
+                role : req.session.role || '',
+                nav : "admin"
+            };
+            res.layout('./public/layout', header_info, {
                 body: {
                     block: "./admin/labs/labs_list",
                     data: {
@@ -53,7 +60,14 @@ exports.labsUpload = function (req,res) {
     var id = req.params.id || '';
     if(!id)
     {
-        res.layout('./admin/public/layout', {title: "发布Demo"}, {
+        //header data
+        var header_info = {
+            title : "实验室发布demo-星际实验室！",
+            nickname : req.session.nickname || '',
+            role : req.session.role || '',
+            nav : "admin"
+        };
+        res.layout('./public/layout', header_info, {
             body: {
                 block: "./admin/labs/labs_upload",
                 data: {
@@ -65,7 +79,14 @@ exports.labsUpload = function (req,res) {
         var sql = "SELECT * FROM blog_labs WHERE id = '"+ id +"'";
         var param = [];
         db.query(sql,param,function (rows) {
-            res.layout('./admin/public/layout', {title: "发布Demo"}, {
+            //header data
+            var header_info = {
+                title : "实验室更新demo-星际实验室！",
+                nickname : req.session.nickname || '',
+                role : req.session.role || '',
+                nav : "admin"
+            };
+            res.layout('./public/layout', header_info, {
                 body: {
                     block: "./admin/labs/labs_upload",
                     data: {

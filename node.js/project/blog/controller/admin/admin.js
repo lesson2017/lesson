@@ -23,7 +23,7 @@ exports.blogList = function (req,res) {
         rows.forEach(function (item) {
             item.datetime = global.format(item.datetime,'yyyy-MM-dd HH:mm:ss');
         });
-        res.layout('./admin/public/layout', {title: "博客列表"}, {
+        res.layout('./public/layout', {title: "博客列表"}, {
             body: {
                 block: "./admin/blog/blog_list",
                 data: {
@@ -37,7 +37,7 @@ exports.blogPublish = function (req,res) {
     var id = req.params.id || '';
     if(!id)
     {
-        res.layout('./admin/public/layout', {title: "博客发表"}, {
+        res.layout('./public/layout', {title: "博客发表"}, {
             body: {
                 block: "./admin/blog/blog_form",
                 data: {
@@ -53,7 +53,7 @@ exports.blogPublish = function (req,res) {
                 console.log("error:"+err.message);
                 return false;
             };
-            res.layout('./admin/public/layout', {title: "博客发表"}, {
+            res.layout('./public/layout', {title: "博客发表"}, {
                 body: {
                     block: "./admin/blog/blog_form",
                     data: {
@@ -120,7 +120,7 @@ exports.labsList = function (req,res) {
             console.log("error:"+err.message);
             return false;
         };
-        res.layout('./admin/public/layout', {title: "Demo列表"}, {
+        res.layout('./public/layout', {title: "Demo列表"}, {
             body: {
                 block: "./admin/labs/labs_list",
                 data: {
@@ -132,7 +132,7 @@ exports.labsList = function (req,res) {
 };
 
 exports.labsUpload = function (req,res) {
-    res.layout('./admin/public/layout', {title: "发布Demo"}, {
+    res.layout('./public/layout', {title: "发布Demo"}, {
         body: {
             block: "./admin/labs/labs_upload",
             data: {}

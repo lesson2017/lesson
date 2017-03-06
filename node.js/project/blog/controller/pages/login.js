@@ -9,31 +9,40 @@ exports.index = function (req, res, next) {
     //header data
     var header_info = {
         title : "登录-星际实验室！",
-        nickname : req.session.nickname || ''
+        nickname : req.session.nickname || '',
+        nav : 'login'
     };
-    res.layout('./pages/public/layout', header_info, {
+    res.layout('./public/layout', header_info, {
         body: {
             block: "./pages/login/index",
-            data: {
-                nav: "Matthew1321"
-            }
+            data: {}
         }
     });
 };
 exports.doLogin = function (req,res) {
+    var formData = {
+        "email" : req.body.email,
+        "password" : req.body.password
+    };
     //点击登录
-    var sql = "SELECT * FROM blog_user WHERE email = '"+ req.body.email +"'";
+    var sql = "SELECT id,nickname,password,role FROM blog_user WHERE email = '"+ formData.email +"'";
     var param = [];
     db.query(sql, param,function (rows) {
         var data = rows[0];
-        if(data.password == req.body.password)
+        if(data.password == formData.password)
         {
             //登录成功后将用nickname存入session
             req.session.nickname = data.nickname;
-            res.cookie('nickname',data.nickname,{path: '/'});
+            req.session.role = data.role;
             return res.redirect('/');
         }else{
             return res.send('密码或邮箱错误！');
         };
     });
+};
+//退出
+exports.logout = function (req,res) {
+    req.session.nickname = null;
+    req.session.role = null;
+    return res.redirect('/');
 };

@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <%include ../../public/left_menu.html%>
+        <div class="col-md-9">
+            <form class="form-horizontal" method="post" action="/admin/classify/doAddClassify" id="doAddClassifyForm">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">分类</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="className" placeholder="多个分类请用英文逗号（,）分隔">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="button" class="btn btn-success">添加</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

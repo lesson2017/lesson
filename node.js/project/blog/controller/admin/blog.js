@@ -26,7 +26,15 @@ exports.blogList = function (req,res) {
             rows.forEach(function (item) {
                 item.datetime = global.format(item.datetime,'yyyy-MM-dd HH:mm:ss');
             });
-            res.layout('./admin/public/layout', {title: "博客列表"}, {
+
+            //header data
+            var header_info = {
+                title : "博客管理-星际实验室！",
+                nickname : req.session.nickname || '',
+                role : req.session.role || '',
+                nav : "admin"
+            };
+            res.layout('./public/layout', header_info, {
                 body: {
                     block: "./admin/blog/blog_list",
                     data: {
@@ -46,7 +54,14 @@ exports.blogPublish = function (req,res) {
     var id = req.params.id || '';
     if(!id)
     {
-        res.layout('./admin/public/layout', {title: "博客发表"}, {
+        //header data
+        var header_info = {
+            title : "博客发布-星际实验室！",
+            nickname : req.session.nickname || '',
+            role : req.session.role || '',
+            nav : "admin"
+        };
+        res.layout('./public/layout', header_info, {
             body: {
                 block: "./admin/blog/blog_form",
                 data: {
@@ -58,7 +73,15 @@ exports.blogPublish = function (req,res) {
         var sql = "SELECT * FROM blog_list WHERE id = '"+ id +"'";
         var param = [];
         db.query(sql,param,function (rows) {
-            res.layout('./admin/public/layout', {title: "博客发表"}, {
+
+            //header data
+            var header_info = {
+                title : "博客发布-星际实验室！",
+                nickname : req.session.nickname || '',
+                role : req.session.role || '',
+                nav : "admin"
+            };
+            res.layout('./public/layout', header_info, {
                 body: {
                     block: "./admin/blog/blog_form",
                     data: {

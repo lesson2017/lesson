@@ -6,14 +6,14 @@
 exports.index = function (req,res,next) {
     var header_info = {
         title : "欢迎访问星际实验室！",
-        nickname : req.session.nickname || ''
+        nickname : req.session.nickname || '',
+        role : req.session.role || '',
+        nav:"home"
     };
-    res.layout('./pages/public/layout', header_info, {
+    res.layout('./public/layout', header_info, {
         body: {
             block: "./pages/home/index",
-            data: {
-                "nav":"home"
-            }
+            data: {}
         }
     });
 }

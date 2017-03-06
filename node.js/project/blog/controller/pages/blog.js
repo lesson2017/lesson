@@ -11,7 +11,6 @@ exports.index = function (req,res) {
     var currentPage = req.params.page || 1; //当前页
     var itemTotal = 0; //总条数
     var pageNum = settings.pages.page_num;
-
     var sql = "SELECT COUNT(id) FROM blog_list";
     var param = [];
     //查询总数
@@ -41,9 +40,11 @@ exports.index = function (req,res) {
             //header data
             var header_info = {
                 title : "博客-星际实验室！",
-                nickname : req.session.nickname || ''
+                nickname : req.session.nickname || '',
+                role : req.session.role || '',
+                nav : "blog"
             };
-            res.layout('./pages/public/layout', header_info, {
+            res.layout('./public/layout', header_info, {
                 body: {
                     block: "./pages/blog/index",
                     data: {
@@ -73,9 +74,11 @@ exports.blogDetails = function (req,res) {
         //header data
         var header_info = {
             title : "博客-星际实验室！",
-            nickname : req.session.nickname || ''
+            nickname : req.session.nickname || '',
+            role : req.session.role || '',
+            nav : "blog"
         };
-        res.layout('./pages/public/layout', header_info, {
+        res.layout('./public/layout', header_info, {
             body: {
                 block: "./pages/blog/blog_details",
                 data: {

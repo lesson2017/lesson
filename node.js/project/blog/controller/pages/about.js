@@ -7,9 +7,11 @@ exports.index = function (req,res,next) {
     //header data
     var header_info = {
         title : "注册-星际实验室！",
-        nickname : req.session.nickname || ''
+        nickname : req.session.nickname || '',
+        role : req.session.role || '',
+        nav : "about"
     };
-    res.layout('./pages/public/layout', header_info, {
+    res.layout('./public/layout', header_info, {
         body: {
             block: "./pages/about/index",
             data: {}

@@ -11,9 +11,10 @@ exports.index = function (req,res,next) {
     //header data
     var header_info = {
         title : "实验室-星际实验室！",
-        nickname : req.session.nickname || ''
+        nickname : req.session.nickname || '',
+        nav : 'login'
     };
-    res.layout('./pages/public/layout', header_info, {
+    res.layout('./public/layout', header_info, {
         body: {
             block: "./pages/reg/index",
             data: {}

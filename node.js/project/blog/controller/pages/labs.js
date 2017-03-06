@@ -26,9 +26,11 @@ exports.index = function (req,res) {
             //header data
             var header_info = {
                 title : "实验室-星际实验室！",
-                nickname : req.session.nickname || ''
+                nickname : req.session.nickname || '',
+                role : req.session.role || '',
+                nav : "labs"
             };
-            res.layout('./pages/public/layout', header_info, {
+            res.layout('./public/layout', header_info, {
                 body: {
                     block : "./pages/labs/index",
                     data : {
@@ -50,9 +52,11 @@ exports.labsDemo = function (req,res) {
     //header data
     var header_info = {
         title : "实验室-星际实验室！",
-        nickname : req.session.nickname || ''
+        nickname : req.session.nickname || '',
+        role : req.session.role || '',
+        nav : "labs"
     };
-    res.layout('./pages/public/layout', header_info, {
+    res.layout('./public/layout', header_info, {
         body: {
             block: "./output/"+id+"/demo/index",
             data: {

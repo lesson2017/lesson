@@ -1,0 +1,12 @@
+Error: No default engine was specified and no extension was provided.
+    at new View (D:\wamp\www\node.js\node_modules\express\lib\view.js:62:11)
+    at EventEmitter.render (D:\wamp\www\node.js\node_modules\express\lib\application.js:569:12)
+    at ServerResponse.render (D:\wamp\www\node.js\node_modules\express\lib\response.js:960:7)
+    at D:\wamp\www\node.js\lesson\express\get_post_2.js:14:9
+    at Layer.handle [as handle_request] (D:\wamp\www\node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\wamp\www\node.js\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\wamp\www\node.js\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\wamp\www\node.js\node_modules\express\lib\router\layer.js:95:5)
+    at D:\wamp\www\node.js\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\wamp\www\node.js\node_modules\express\lib\router\index.js:330:12)
+Mon, 18 Jul 2016 14:17:23 GMT body-parser deprecated undefined extended: provide extended option at get_post_2.js:19:20

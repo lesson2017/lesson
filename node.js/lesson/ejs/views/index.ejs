@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+    <h2>我今天买了个iPhone<%= a%>S</h2>
+    <h4>今日头条</h4>
+    <ul>
+        <%for(var i=0;i<news.length;i++){%>
+        <li><%= news[i]%></li>
+        <%}%>
+    </ul>
+    <h4>手机专柜（显示5000元以上的手机）</h4>
+    <ul>
+    <%for(var i=0;i<goods.length;i++){
+        if(goods[i].price >= 5000){
+    %>
+        <li><%= goods[i].title%> <span>￥<%= goods[i].price%></span></li>
+    <%}
+    }%>
+    </ul>
+</body>
+</html>
