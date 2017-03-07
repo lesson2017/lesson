@@ -1,0 +1,6 @@
+<script src="/js/libs/underscore-min.js"></script>
+<script type="text/template" id="classifyTpl">
+    <label class="radio-inline">
+        <input type="radio" name="classify" {{ if(classify == className ){ }} checked = 'checked'{{ } }} value="{{= className}}"> {{= className}}
+    </label>
+</script>

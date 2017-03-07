@@ -44,7 +44,7 @@ exports.classifyList = function (req,res) {
                         pages : {
                             currentPage : parseInt(currentPage),
                             totalPage : parseInt(Math.ceil(itemTotal / pageNum)),
-                            typePage : 'admin/blog/list'
+                            typePage : 'admin/classify/list'
                         }
                     }
                 }
@@ -73,7 +73,60 @@ exports.classifyAdd = function (req,res) {
 };
 
 //分类添加实现
-exports.doAddClassify = function (req,res) {}
+exports.doAddClassify = function (req,res) {
+    var classArr = req.body.className.split(',');
+    classArr.forEach(function (item,index) {
+        //写入数据库
+        var sql = "INSERT INTO blog_classify(id,className,datetime) VALUES(?,?,now())";
+        var param = [Date.now()+index,item];
+        var record = true;
+        db.query(sql,param, function (rows) {
+            //监控每次数据的插入结果，一旦有一个写入错误，则设置record=false
+            if(rows.affectedRows != 1)
+            {
+                record = false;
+            };
+            if(index == (classArr.length-1) && record)
+            {
+                return res.json({result:1,resultMsg:"分类添加成功！"});
+            }else if(record === false){
+                return res.json({result:0,resultMsg:"分类添加失败！"});
+            };
+        });
+    });
+};
 
 //分类显示接口
-exports.findList = function (req,res) {}
+exports.findList = function (req,res) {
+    var sql = "SELECT id,className FROM blog_classify";
+    var param = [];
+    db.query(sql,param, function (rows) {
+        if(rows)
+        {
+            return res.json({result:1,resultData:rows});
+        }else{
+            return res.json({result:0,result:"查询分类数据失败！"});
+        };
+    });
+};
+
+//删除分类
+exports.delClassify = function (req,res) {
+    var id = req.body.id || '';
+    if(id)
+    {
+        var sql = "DELETE FROM blog_classify WHERE id=?";
+        var param = [id];
+        db.query(sql,param, function (rows) {
+            console.log(rows);
+            if(rows.affectedRows == 1)
+            {
+                return res.json({result:1,resultMsg:"删除成功！"});
+            }else{
+                return res.json({result:0,resultMsg:"删除失败！"});
+            };
+        });
+    }else{
+        return res.json({result:0,resultMsg:"参数错误！"});
+    };
+};

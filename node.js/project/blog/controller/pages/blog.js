@@ -19,7 +19,8 @@ exports.index = function (req,res) {
         itemTotal = rows[0]["COUNT(id)"];
 
         //查询分页数据
-        var sql = "SELECT * FROM blog_list ORDER BY datetime DESC limit "+ (currentPage-1) * pageNum +"," + pageNum;
+        //var sql = "SELECT * FROM blog_list ORDER BY datetime DESC limit "+ (currentPage-1) * pageNum +"," + pageNum;
+        var sql = "SELECT * FROM blog_list ORDER BY datetime DESC limit ?,?;SELECT id,className FROM blog_classify";
         /*
         * currentPage 1,2,3,4
         * (1-1)*2 = 0
@@ -31,9 +32,9 @@ exports.index = function (req,res) {
         * 4,2 = 5,6
         * 6,2 = 7,8
         * */
-        var param = [];
+        var param = [(currentPage-1) * pageNum,pageNum];
         db.query(sql,param,function (rows) {
-            rows.forEach(function (item) {
+            rows[0].forEach(function (item) {
                 item.datetime = global.format(item.datetime,'yyyy-MM-dd HH:mm:ss');
             });
 
@@ -48,7 +49,8 @@ exports.index = function (req,res) {
                 body: {
                     block: "./pages/blog/index",
                     data: {
-                        data : rows,
+                        data : rows[0],
+                        classData : rows[1],
                         pages : {
                             currentPage : parseInt(currentPage),
                             totalPage : parseInt(Math.ceil(itemTotal / pageNum)),

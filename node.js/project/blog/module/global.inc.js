@@ -86,6 +86,8 @@ exports.fnLoginCheck = function (req,res,next) {
     if(nickname && role === '1')
     {
         next();
+    }else if(req.xhr){
+        return res.json({result:0,resultMsg:"您没有请求权限，请联系管理员！"});
     }else{
         return res.redirect('/login');
     };

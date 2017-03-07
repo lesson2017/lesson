@@ -58,8 +58,9 @@ module.exports = function (app) {
     app.post('/admin/labs/del',urlencodedParser,admin_labs.labsDel);
 
     //admin
-    app.get('/admin/classify/list',global.fnLoginCheck,admin_classify.classifyList);
+    app.get('/admin/classify/list/:page?',global.fnLoginCheck,admin_classify.classifyList);
     app.get('/admin/classify/add',global.fnLoginCheck,admin_classify.classifyAdd);
     app.post('/admin/classify/doAddClassify',urlencodedParser,admin_classify.doAddClassify);
-    app.post('/admin/classify/findList',urlencodedParser,admin_classify.findList);
+    app.post('/admin/classify/findList',global.fnLoginCheck,urlencodedParser,admin_classify.findList);
+    app.post('/admin/classify/delClassify',global.fnLoginCheck,urlencodedParser,admin_classify.delClassify);
 }

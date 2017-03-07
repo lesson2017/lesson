@@ -25,7 +25,9 @@
     <file url="file://$PROJECT_DIR$/node.js/project/blog/controller/admin/classify.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/node.js/project/blog/static/css/bootstrap.min.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/node.js/project/blog/static/css/style.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node.js/project/blog/static/js/classify_module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/node.js/project/blog/static/js/labs_module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node.js/project/blog/static/js/main_module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/node.js/project/blog/views/pages/labs/index.html" charset="UTF-8" />
   </component>
 </project>

@@ -16,7 +16,8 @@ var pool = mysql.createPool({
     user : settings.db.user,
     password : settings.db.password,
     port : settings.db.port,
-    database : settings.db.database
+    database : settings.db.database,
+    multipleStatements: true  //开启这个选项可以实现多条sql输出，但是要预防sql注入攻击
 });
 
 //执行sql
