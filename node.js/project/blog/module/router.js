@@ -24,11 +24,11 @@ module.exports = function (app) {
     app.get('/',home.index);
 
     //blog
-    app.get('/blog/:page?',blog.index);
+    app.get('/blog/:page/:id?',blog.index);
     app.get('/blogDetails/:id',blog.blogDetails);
 
     //labs
-    app.get('/labs/:page?',labs.index);
+    app.get('/labs/:page/:id?',labs.index);
     app.get('/labs/demo/:id',labs.labsDemo);
 
     //about

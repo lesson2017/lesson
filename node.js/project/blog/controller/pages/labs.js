@@ -11,15 +11,31 @@ exports.index = function (req,res) {
     var currentPage = req.params.page || 1; //当前页
     var itemTotal = 0; //总条数
     var pageNum = settings.pages.page_num;
-    var sql = "SELECT COUNT(*) FROM blog_labs";
-    var param = [];
+    var classify_id = req.params.id;
+    if(!classify_id)
+    {
+        var sql = "SELECT COUNT(*) FROM blog_labs";
+        var param = [];
+    }else{
+        var sql = "SELECT COUNT(*) FROM blog_labs WHERE classify_id =?";
+        var param = [classify_id];
+    };
+
     db.query(sql,param, function (rows) {
         //获取总共有多少条数据
         itemTotal = rows[0]["COUNT(*)"];
-        var sql = "SELECT * FROM blog_labs ORDER BY datetime DESC limit "+ (currentPage-1) * pageNum +"," + pageNum;
-        var param = [];
+        console.log(rows);
+        if(!classify_id){
+            var sql = "SELECT * FROM blog_labs ORDER BY datetime DESC limit ?,?;SELECT id,className FROM blog_classify";
+            var param = [(currentPage-1) * pageNum,pageNum];
+        }else{
+            var sql = "SELECT * FROM blog_labs WHERE classify_id=? ORDER BY datetime DESC limit ?,?;SELECT id,className FROM blog_classify";
+            var param = [classify_id,(currentPage-1) * pageNum,pageNum];
+        };
+
         db.query(sql,param,function (rows) {
-            rows.forEach(function (item) {
+            console.log(rows);
+            rows[0].forEach(function (item) {
                 item.datetime = global.format(item.datetime,'yyyy-MM-dd HH:mm:ss');
             });
 
@@ -30,11 +46,13 @@ exports.index = function (req,res) {
                 role : req.session.role || '',
                 nav : "labs"
             };
+
             res.layout('./public/layout', header_info, {
                 body: {
                     block : "./pages/labs/index",
                     data : {
-                        "data" : rows,
+                        "data" : rows[0],
+                        "classData" : rows[1],
                         "pages" : {
                             currentPage : parseInt(currentPage),
                             totalPage : parseInt(Math.ceil(itemTotal / pageNum)),

@@ -2,23 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061ebe90-7d11-4639-a469-b6fbd43b788d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/blog/views/public/classify_ajax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/blog/views/public/classify_ejs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/blog/static/js/classify_module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/blog/static/js/main_module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/blog/static/js/libs/underscore-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/img/validform/error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/js/layer/skin/default/icon-ext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/js/layer/skin/default/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/js/layer/skin/default/loading-0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/js/layer/skin/default/loading-1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/js/layer/skin/default/loading-2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/img/validform/onLoad.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/img/validform/right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/js/Validform_v5.3.2_min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/demo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/h5-web/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/js/layer/skin/layer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/static/js/layer/layer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/h5-web/static/css/mobile-ipad.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.js/project/h5-web/static/css/mobile.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/controller/admin/blog.js" afterPath="$PROJECT_DIR$/node.js/project/blog/controller/admin/blog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js" afterPath="$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/doc/blog.sql" afterPath="$PROJECT_DIR$/node.js/project/blog/doc/blog.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_form.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/controller/admin/classify.js" afterPath="$PROJECT_DIR$/node.js/project/blog/controller/admin/classify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/admin/classify/classify_form.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/admin/classify/classify_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/admin/classify/classify_list.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/admin/classify/classify_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/module/db_mysql_pool.js" afterPath="$PROJECT_DIR$/node.js/project/blog/module/db_mysql_pool.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_list.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/221/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/node.js/project/221/static/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/public/classify_ajax.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/public/classify_ajax.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/public/classify_ejs.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/public/classify_ejs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/module/global.inc.js" afterPath="$PROJECT_DIR$/node.js/project/blog/module/global.inc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/pages/blog/index.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/pages/blog/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_upload.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_upload.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/public/layout.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/public/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/public/header.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/public/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/pages/labs/index.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/pages/labs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/controller/admin/labs.js" afterPath="$PROJECT_DIR$/node.js/project/blog/controller/admin/labs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/controller/pages/labs.js" afterPath="$PROJECT_DIR$/node.js/project/blog/controller/pages/labs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/static/js/main_module.js" afterPath="$PROJECT_DIR$/node.js/project/blog/static/js/main_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/views/public/page.html" afterPath="$PROJECT_DIR$/node.js/project/blog/views/public/page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js/project/blog/module/router.js" afterPath="$PROJECT_DIR$/node.js/project/blog/module/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,31 +58,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node.js/project/blog/module/router.js">
+      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="41" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="41" />
-              <folding />
+            <state vertical-scroll-proportion="-5.9">
+              <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#6;n#tbody#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/pages/blog/index.html">
+      <file leaf-file-name="demo2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo/demo2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13785557">
-              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classify_ejs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/public/classify_ejs.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.8">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.48188406">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -77,6 +90,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="Html5" />
       </list>
     </option>
@@ -87,14 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/node.js/project/blog/static/css/style.css" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/views/pages/public/page.html" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/module/db_mysql.js" />
-        <option value="$PROJECT_DIR$/node.js/node_modules/express/lib/application.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/config/settings.js" />
-        <option value="$PROJECT_DIR$/node.js/project/221/app.js" />
-        <option value="$PROJECT_DIR$/node.js/project/221/module/router.js" />
-        <option value="$PROJECT_DIR$/node.js/project/221/controller/admin/admin.js" />
         <option value="$PROJECT_DIR$/demo.html" />
         <option value="$PROJECT_DIR$/node.js/project/221/module/db_mysql_pool.js" />
         <option value="$PROJECT_DIR$/node.js/lesson/fs/test/test_1.txt" />
@@ -105,17 +111,10 @@
         <option value="$PROJECT_DIR$/node.js/project/blog/views/pages/public/header.html" />
         <option value="$PROJECT_DIR$/node.js/project/blog/controller/pages/about.js" />
         <option value="$PROJECT_DIR$/node.js/project/blog/controller/pages/home.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/controller/pages/labs.js" />
         <option value="$PROJECT_DIR$/node.js/project/blog/controller/pages/login.js" />
         <option value="$PROJECT_DIR$/node.js/project/blog/controller/pages/reg.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/views/pages/labs/index.html" />
         <option value="$PROJECT_DIR$/node.js/project/blog/controller/admin/admin.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_list.html" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/controller/admin/blog.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/controller/admin/labs.js" />
         <option value="$PROJECT_DIR$/node.js/project/blog/app.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/views/public/header.html" />
         <option value="$PROJECT_DIR$/node.js/project/blog/static/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/node.js/project/blog/page.js" />
         <option value="$PROJECT_DIR$/node.js/project/blog/page.html" />
@@ -127,17 +126,32 @@
         <option value="$PROJECT_DIR$/node.js/project/blog/views/public/layout.html" />
         <option value="$PROJECT_DIR$/node.js/project/blog/module/global.inc.js" />
         <option value="$PROJECT_DIR$/node.js/project/blog/module/db_mysql_pool.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/module/router.js" />
         <option value="$PROJECT_DIR$/node.js/project/blog/views/admin/classify/classify_list.html" />
         <option value="$PROJECT_DIR$/node.js/project/blog/static/js/classify_module.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_form.html" />
         <option value="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_upload.html" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/static/js/main_module.js" />
         <option value="$PROJECT_DIR$/node.js/project/blog/controller/admin/classify.js" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/views/public/classify_ajax.html" />
-        <option value="$PROJECT_DIR$/node.js/project/blog/views/public/classify_ejs.html" />
         <option value="$PROJECT_DIR$/node.js/project/blog/views/pages/blog/index.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_form.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/static/js/main_module.js" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/public/classify_ajax.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/controller/admin/blog.js" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_list.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/controller/admin/labs.js" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/public/page.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/public/classify_ejs.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/pages/labs/index.html" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/controller/pages/labs.js" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/module/router.js" />
+        <option value="$PROJECT_DIR$/node.js/project/blog/views/public/header.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/node.js/project/221/static/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/node.js/project/h5-web/static/css/mobile.css" />
+        <option value="$PROJECT_DIR$/node.js/project/h5-web/index.html" />
+        <option value="$PROJECT_DIR$/node.js/project/h5-web/static/css/mobile-ipad.css" />
+        <option value="$PROJECT_DIR$/demo/demo.html" />
+        <option value="$PROJECT_DIR$/demo/demo2.html" />
       </list>
     </option>
   </component>
@@ -151,7 +165,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1692" />
+    <option name="width" value="1696" />
     <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -177,7 +191,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -250,8 +263,65 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node.js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node.js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -263,23 +333,24 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="recentsLimit" value="5" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/lesson/node.js/project/blog/module/global.inc.js&#10;global&#9;FILE&#9;file://E:/lesson/node.js/project/blog/module/global.inc.js&#10;style.css&#9;FILE&#9;file://E:/lesson/node.js/project/blog/static/css/style.css&#10;app.js&#9;FILE&#9;file://E:/lesson/node.js/project/blog/app.js" />
+    <property name="SearchEverywhereHistoryKey" value="page&#9;FILE&#9;file://E:/lesson/node.js/project/blog/views/public/page.html&#10;ma&#9;FILE&#9;file://E:/lesson/node.js/project/blog/static/js/main_module.js&#10;global&#9;FILE&#9;file://E:/lesson/node.js/project/blog/module/global.inc.js&#10;style.css&#9;FILE&#9;file://E:/lesson/node.js/project/blog/static/css/style.css&#10;app.js&#9;FILE&#9;file://E:/lesson/node.js/project/blog/app.js" />
     <property name="FullScreen" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\lesson\node.js\project\blog\doc" />
-      <recent name="E:\lesson\node.js\project\blog\static\js\libs" />
-      <recent name="E:\lesson\node.js\project\blog\views\admin\classify" />
-      <recent name="E:\lesson\node.js\lesson" />
-      <recent name="E:\lesson\node.js\project\blog\views\public" />
+      <recent name="E:\lesson\demo\static\js" />
+      <recent name="E:\lesson\demo\static\img" />
+      <recent name="E:\lesson\demo" />
+      <recent name="E:\lesson\demo\static\css" />
+      <recent name="E:\lesson\node.js\project\h5-web\static\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\lesson\demo\static\js" />
       <recent name="E:\lesson\node.js\project\blog\views" />
       <recent name="E:\lesson\node.js\project\221\views" />
       <recent name="E:\lesson\node.js\project\221\static" />
       <recent name="E:\lesson\node.js\project\221\views\pages\about" />
-      <recent name="E:\lesson\node.js\project\221\controller\pages" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js (1)">
@@ -367,15 +438,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1692" height="1026" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19975787" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19927536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41732284" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41732284" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -405,64 +476,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/doc/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/lyb_node/model/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0992126">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/module/db_mysql.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8125">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/221/module/db_mysql_pool.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7098446">
-          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/221/controller/admin/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21761657">
-          <caret line="101" column="23" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/221/module/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39896372">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/221/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.746114">
-          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node.js/project/blog/static/js/labs_module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -491,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/pages/labs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.97409326">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/pages/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -512,24 +518,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/pages/labs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6502732">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/admin/public123/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30601093">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -568,26 +560,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/public/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16321243">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node.js/project/blog/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.0">
           <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/static/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.40625">
-          <caret line="4" column="18366" selection-start-line="4" selection-start-column="18366" selection-end-line="4" selection-end-column="18366" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -595,13 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32971016">
           <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/public/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17753623">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -623,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35079366">
           <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -631,7 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -639,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26709062">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -647,15 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45575958">
           <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38564274">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24486302">
           <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,15 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80136985">
-          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,23 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13785557">
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/admin/labs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33186814">
-          <caret line="147" column="69" selection-start-line="147" selection-start-column="61" selection-end-line="147" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/admin/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04312115">
-          <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9190372">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,34 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.233334">
           <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/static/js/main_module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/public/classify_ajax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27571115">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7242888">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#script#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#script#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -762,30 +662,186 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.1991787">
           <caret line="119" column="45" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/static/js/main_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22757111">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/admin/blog/blog_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56017506">
+          <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/admin/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="116" column="51" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/admin/labs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76386034">
+          <caret line="162" column="30" selection-start-line="162" selection-start-column="30" selection-end-line="162" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/admin/labs/labs_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37417942">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/public/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21881838">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/pages/labs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.025362318">
+          <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node.js/project/blog/module/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="41" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/public/classify_ejs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-          <folding />
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/pages/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13785557">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/public/classify_ejs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10144927">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/public/classify_ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10144927">
+          <caret line="3" column="134" selection-start-line="3" selection-start-column="125" selection-end-line="3" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/pages/labs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/controller/pages/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="53" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/views/public/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26449275">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.90700483">
+          <caret line="41" column="9" selection-start-line="17" selection-start-column="0" selection-end-line="41" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/blog/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75874126">
+          <caret line="4" column="18366" selection-start-line="4" selection-start-column="18366" selection-end-line="4" selection-end-column="18366" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3043478">
+          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/221/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6891" column="0" selection-start-line="6891" selection-start-column="0" selection-end-line="6891" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/h5-web/static/css/mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26923078">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/h5-web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js/project/h5-web/static/css/mobile-ipad.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0979021">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.9">
+          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#6;n#tbody#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48188406">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding />
         </state>
       </provider>

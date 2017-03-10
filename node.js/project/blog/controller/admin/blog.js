@@ -114,17 +114,20 @@ exports.doEdit = function (req,res) {
         "title" : req.body.title,
         "content" : req.body.editorValue,
         "author" : "ghost",
-        "classify" : req.body.classify,
+        "classify" : JSON.parse(req.body.classify),
         "description" : req.body.description
     };
+    console.log(formData);
     if(!id)
     {
         //增加数据
-        var sql = "INSERT INTO blog_list(id,title,content,author,datetime,classify,description) VALUES(?,?,?,?,now(),?,?)";
-        var param = [formData.id,formData.title,formData.content,formData.author,formData.classify,formData.description];
+        var sql = "INSERT INTO blog_list(id,title,content,author,datetime,classify_name,classify_id,description) VALUES(?,?,?,?,now(),?,?,?)";
+        var param = [formData.id,formData.title,formData.content,formData.author,formData.classify.className,formData.classify.id,formData.description];
     }else{
         //更新数据 UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值
-        var sql = "UPDATE blog_list SET title = '"+ formData.title +"',content='"+ formData.content +"',datetime=now(),classify='"+ formData.classify +"',description='"+ formData.description +"' WHERE id = '"+ id + "'";
+        //var sql = "UPDATE blog_list SET title = '"+ formData.title +"',content='"+ formData.content +"',datetime=now(),classify='"+ formData.classify +"',description='"+ formData.description +"' WHERE id = '"+ id + "'";
+        var sql = "UPDATE blog_list SET title=?,content=?,datetime=now(),classify_id=?,classify_name=?,description=? WHERE id=?";
+        var param = [formData.title,formData.content,formData.classify.id,formData.classify.className,formData.description,id];
     };
     db.query(sql,param, function (rows) {
         console.log(rows);

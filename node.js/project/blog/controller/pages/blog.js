@@ -11,28 +11,53 @@ exports.index = function (req,res) {
     var currentPage = req.params.page || 1; //当前页
     var itemTotal = 0; //总条数
     var pageNum = settings.pages.page_num;
-    var sql = "SELECT COUNT(id) FROM blog_list";
-    var param = [];
+    var classify_id = req.params.id;
+    if(!classify_id)
+    {
+        var sql = "SELECT COUNT(*) FROM blog_list";
+        var param = [];
+    }else{
+        var sql = "SELECT COUNT(*) FROM blog_list WHERE classify_id =?";
+        var param = [classify_id];
+    };
+
     //查询总数
     db.query(sql,param,function (rows) {
         //获取总共有多少条数据
-        itemTotal = rows[0]["COUNT(id)"];
+        itemTotal = rows[0]["COUNT(*)"];
+        if(!classify_id)
+        {
+            //查询分页数据
+            var sql = "SELECT * FROM blog_list ORDER BY datetime DESC limit ?,?;SELECT id,className FROM blog_classify";
+            /*
+             * currentPage 1,2,3,4
+             * (1-1)*2 = 0
+             * (2-1)*2 = 2
+             * (3-1)*2 = 4
+             * (4-1)*2 = 6
+             * 0,2 = 1,2
+             * 2,2 = 3,4
+             * 4,2 = 5,6
+             * 6,2 = 7,8
+             * */
+            var param = [(currentPage-1) * pageNum,pageNum];
+        }else{
+            //查询分页数据
+            var sql = "SELECT * FROM blog_list WHERE classify_id=? ORDER BY datetime DESC limit ?,?;SELECT id,className FROM blog_classify";
+            /*
+             * currentPage 1,2,3,4
+             * (1-1)*2 = 0
+             * (2-1)*2 = 2
+             * (3-1)*2 = 4
+             * (4-1)*2 = 6
+             * 0,2 = 1,2
+             * 2,2 = 3,4
+             * 4,2 = 5,6
+             * 6,2 = 7,8
+             * */
+            var param = [classify_id,(currentPage-1) * pageNum,pageNum];
+        };
 
-        //查询分页数据
-        //var sql = "SELECT * FROM blog_list ORDER BY datetime DESC limit "+ (currentPage-1) * pageNum +"," + pageNum;
-        var sql = "SELECT * FROM blog_list ORDER BY datetime DESC limit ?,?;SELECT id,className FROM blog_classify";
-        /*
-        * currentPage 1,2,3,4
-        * (1-1)*2 = 0
-        * (2-1)*2 = 2
-        * (3-1)*2 = 4
-        * (4-1)*2 = 6
-        * 0,2 = 1,2
-        * 2,2 = 3,4
-        * 4,2 = 5,6
-        * 6,2 = 7,8
-        * */
-        var param = [(currentPage-1) * pageNum,pageNum];
         db.query(sql,param,function (rows) {
             rows[0].forEach(function (item) {
                 item.datetime = global.format(item.datetime,'yyyy-MM-dd HH:mm:ss');
@@ -54,7 +79,8 @@ exports.index = function (req,res) {
                         pages : {
                             currentPage : parseInt(currentPage),
                             totalPage : parseInt(Math.ceil(itemTotal / pageNum)),
-                            typePage : 'blog'
+                            typePage : "blog",
+                            classify_id : classify_id
                         }
                     }
                 }

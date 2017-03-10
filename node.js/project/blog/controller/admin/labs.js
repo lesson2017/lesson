@@ -102,7 +102,6 @@ exports.labsUpload = function (req,res) {
 //上传demo
 exports.labsDoUpload = function (req,res) {
     var id = req.params.id || '';
-    console.log(id);
     var form = new formidable.IncomingForm();
     var filesArr = [];
     //设置文件上传路径
@@ -138,28 +137,30 @@ exports.labsDoUpload = function (req,res) {
                 "title" : fields.title,
                 "description" : fields.description,
                 "author" : "ghost",
-                "classify" : fields.classify,
+                "classify" : JSON.parse(fields.classify),
                 "imgPath" : newFileName_img,
                 "zipPath" : newFileName_zip,
                 "pv" : 99
             };
             //增加数据
-            var sql = "INSERT INTO blog_labs(id,title,classify,description,author,imgPath,zipPath,pv,datetime) VALUES(?,?,?,?,?,?,?,?,now())";
-            var param = [formData.id,formData.title,formData.classify,formData.description,formData.author,formData.imgPath,formData.zipPath,formData.pv];
+            var sql = "INSERT INTO blog_labs(id,title,classify_id,classify_name,description,author,imgPath,zipPath,pv,datetime) VALUES(?,?,?,?,?,?,?,?,?,now())";
+            var param = [formData.id,formData.title,formData.classify.id,formData.classify.className,formData.description,formData.author,formData.imgPath,formData.zipPath,formData.pv];
         }else{
             var formData = {
                 "title" : fields.title,
                 "description" : fields.description,
                 "author" : "ghost",
-                "classify" : fields.classify,
-                "pv" : 99
+                "classify" : JSON.parse(fields.classify)
             };
 //更新数据 UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值
-            var sql = "UPDATE blog_labs SET title = '"+ formData.title +"',description='"+ formData.description +"',datetime=now(),classify='"+ formData.classify +"' WHERE id = '"+ id + "'";
+            //var sql = "UPDATE blog_labs SET title = '"+ formData.title +"',description='"+ formData.description +"',datetime=now(),classify='"+ formData.classify +"' WHERE id = '"+ id + "'";
+            var sql = "UPDATE blog_labs SET title = ?,description=?,datetime=now(),classify_id=?,classify_name=? WHERE id = ?";
+            var param = [formData.title,formData.description,formData.classify.id,formData.classify.className,id];
         };
 
         //执行sql
         db.query(sql,param, function (rows){
+            console.log(rows);
             return res.redirect('/admin/labs/list');
         });
     });

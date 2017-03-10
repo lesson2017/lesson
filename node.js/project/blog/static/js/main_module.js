@@ -10,7 +10,7 @@ $(function () {
      * @description : 显示分类信息
      * */
     var classify_wrap = $(".classify-wrap");
-    var classify = classify_wrap.data("classify") || '';
+    var classifyid = classify_wrap.data("classifyid") || '';
     if(classify_wrap.length>0)
     {
         $.post('/admin/classify/findList', function (data) {
@@ -18,11 +18,10 @@ $(function () {
             if(data.result === 1)
             {
                 $.each(data.resultData, function (i,d) {
-                    console.log(d);
                     var compiled = _.template($('#classifyTpl').html());
                     var html = compiled({
                         "className" : d.className,
-                        "classify" : classify,
+                        "classifyid" : classifyid,
                         "id" : d.id
                     });
                     classify_wrap.append(html);

@@ -3,7 +3,7 @@
         <%if(pages.currentPage === 1){%>
             <li class="disabled"><span>上一页</span></li>
         <%}else{%>
-            <li><a href="/<%= pages.typePage%>/<%= pages.currentPage - 1 %>">上一页</a></li>
+            <li><a href="/<%= pages.typePage%>/<%= pages.currentPage - 1 %><%if(pages.classify_id){%>/<%= pages.classify_id%><%}%>">上一页</a></li>
         <%}%>
 
         <li class="disabled"><span>第<%= pages.currentPage%>页</span></li>
@@ -13,7 +13,7 @@
                 <li class="disabled"><a href="javascript:;"><%= i%></a></li>
             <%}else{%>
                 <%if(i < 4 || i < (pages.currentPage + 3) && i > (pages.currentPage - 3) || i > (pages.totalPage - 3)){%>
-                    <li><a href="/<%= pages.typePage%>/<%= i%>"><%= i%></a></li>
+                    <li><a href="/<%= pages.typePage%>/<%= i%><%if(pages.classify_id){%>/<%= pages.classify_id%><%}%>"><%= i%></a></li>
                     <% isHiddenExist = 0;%>
                 <%}else{%>
                     <%if(isHiddenExist == 0){%>
@@ -28,7 +28,7 @@
         <%if(pages.currentPage === pages.totalPage){%>
             <li class="disabled"><span>下一页</span></li>
         <%}else{%>
-            <li><a href="/<%= pages.typePage%>/<%= pages.currentPage + 1 %>">下一页</a></li>
+            <li><a href="/<%= pages.typePage%>/<%= pages.currentPage + 1 %><%if(pages.classify_id){%>/<%= pages.classify_id%><%}%>">下一页</a></li>
         <%}%>
         <li class="jumpPage">
             <span>

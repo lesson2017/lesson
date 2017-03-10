@@ -1,0 +1,12 @@
+/*
+    max-width : 767px;
+    min-width : 768px;
+*/
+@media screen and (min-width: 768px){
+    body{
+        background: #117700;
+    }
+    h1{
+        color: #fff;
+    }
+}
