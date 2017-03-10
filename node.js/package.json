@@ -17,8 +17,7 @@
     "request": "^2.74.0",
     "rmdir": "^1.2.0",
     "silly-datetime": "^0.1.2",
-    "unzip": "^0.1.11",
-    "when": "^3.7.7"
+    "unzip": "^0.1.11"
   },
   "devDependencies": {},
   "scripts": {
