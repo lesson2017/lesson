@@ -33,7 +33,7 @@ exports.labsList = function (req,res) {
             });
             //header data
             var header_info = {
-                title : "实验室管理-星际实验室！",
+                title : "实验室管理-土星实验室！",
                 nickname : req.session.nickname || '',
                 role : req.session.role || '',
                 nav : "admin"
@@ -62,7 +62,7 @@ exports.labsUpload = function (req,res) {
     {
         //header data
         var header_info = {
-            title : "实验室发布demo-星际实验室！",
+            title : "实验室发布demo-土星实验室！",
             nickname : req.session.nickname || '',
             role : req.session.role || '',
             nav : "admin"
@@ -81,7 +81,7 @@ exports.labsUpload = function (req,res) {
         db.query(sql,param,function (rows) {
             //header data
             var header_info = {
-                title : "实验室更新demo-星际实验室！",
+                title : "实验室更新demo-土星实验室！",
                 nickname : req.session.nickname || '',
                 role : req.session.role || '',
                 nav : "admin"
@@ -160,7 +160,6 @@ exports.labsDoUpload = function (req,res) {
 
         //执行sql
         db.query(sql,param, function (rows){
-            console.log(rows);
             return res.redirect('/admin/labs/list');
         });
     });

@@ -10,7 +10,7 @@ var global = require('../../module/global.inc');
 exports.index = function (req,res,next) {
     //header data
     var header_info = {
-        title : "实验室-星际实验室！",
+        title : "实验室-土星实验室！",
         nickname : req.session.nickname || '',
         nav : 'login'
     };
@@ -39,7 +39,6 @@ exports.doReg = function (req,res,next) {
     db.query(sql,param, function (rows) {
         if(rows.affectedRows === 1)
         {
-            console.log("affectedRows :" + rows.affectedRows);
             console.log("注册成功");
             return res.redirect('/');
             //res.send('注册成功');

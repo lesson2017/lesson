@@ -28,8 +28,8 @@ module.exports = function (app) {
     app.get('/blogDetails/:id',blog.blogDetails);
 
     //labs
-    app.get('/labs/:page/:id?',labs.index);
     app.get('/labs/demo/:id',labs.labsDemo);
+    app.get('/labs/:page/:id?',labs.index);
 
     //about
     app.get('/about',about.index);

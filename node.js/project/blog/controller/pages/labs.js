@@ -24,7 +24,6 @@ exports.index = function (req,res) {
     db.query(sql,param, function (rows) {
         //获取总共有多少条数据
         itemTotal = rows[0]["COUNT(*)"];
-        console.log(rows);
         if(!classify_id){
             var sql = "SELECT * FROM blog_labs ORDER BY datetime DESC limit ?,?;SELECT id,className FROM blog_classify";
             var param = [(currentPage-1) * pageNum,pageNum];
@@ -34,14 +33,13 @@ exports.index = function (req,res) {
         };
 
         db.query(sql,param,function (rows) {
-            console.log(rows);
             rows[0].forEach(function (item) {
                 item.datetime = global.format(item.datetime,'yyyy-MM-dd HH:mm:ss');
             });
 
             //header data
             var header_info = {
-                title : "实验室-星际实验室！",
+                title : "实验室-土星实验室！",
                 nickname : req.session.nickname || '',
                 role : req.session.role || '',
                 nav : "labs"
@@ -69,7 +67,7 @@ exports.labsDemo = function (req,res) {
     var id = req.params.id;
     //header data
     var header_info = {
-        title : "实验室-星际实验室！",
+        title : "实验室-土星实验室！",
         nickname : req.session.nickname || '',
         role : req.session.role || '',
         nav : "labs"

@@ -6,7 +6,7 @@
 exports.index = function (req,res,next) {
     //header data
     var header_info = {
-        title : "注册-星际实验室！",
+        title : "注册-土星实验室！",
         nickname : req.session.nickname || '',
         role : req.session.role || '',
         nav : "about"

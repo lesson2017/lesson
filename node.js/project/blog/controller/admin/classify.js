@@ -31,7 +31,7 @@ exports.classifyList = function (req,res) {
 
             //header data
             var header_info = {
-                title : "分类管理-星际实验室！",
+                title : "分类管理-土星实验室！",
                 nickname : req.session.nickname || '',
                 role : req.session.role || '',
                 nav : "admin"
@@ -57,7 +57,7 @@ exports.classifyList = function (req,res) {
 exports.classifyAdd = function (req,res) {
     //header data
     var header_info = {
-        title : "分类管理-星际实验室！",
+        title : "分类管理-土星实验室！",
         nickname : req.session.nickname || '',
         role : req.session.role || '',
         nav : "admin"
@@ -118,7 +118,6 @@ exports.delClassify = function (req,res) {
         var sql = "DELETE FROM blog_classify WHERE id=?";
         var param = [id];
         db.query(sql,param, function (rows) {
-            console.log(rows);
             if(rows.affectedRows == 1)
             {
                 return res.json({result:1,resultMsg:"删除成功！"});

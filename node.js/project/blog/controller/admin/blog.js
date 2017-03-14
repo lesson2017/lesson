@@ -29,7 +29,7 @@ exports.blogList = function (req,res) {
 
             //header data
             var header_info = {
-                title : "博客管理-星际实验室！",
+                title : "博客管理-土星实验室！",
                 nickname : req.session.nickname || '',
                 role : req.session.role || '',
                 nav : "admin"
@@ -56,7 +56,7 @@ exports.blogPublish = function (req,res) {
     {
         //header data
         var header_info = {
-            title : "博客发布-星际实验室！",
+            title : "博客发布-土星实验室！",
             nickname : req.session.nickname || '',
             role : req.session.role || '',
             nav : "admin"
@@ -76,7 +76,7 @@ exports.blogPublish = function (req,res) {
 
             //header data
             var header_info = {
-                title : "博客发布-星际实验室！",
+                title : "博客发布-土星实验室！",
                 nickname : req.session.nickname || '',
                 role : req.session.role || '',
                 nav : "admin"
@@ -117,7 +117,7 @@ exports.doEdit = function (req,res) {
         "classify" : JSON.parse(req.body.classify),
         "description" : req.body.description
     };
-    console.log(formData);
+
     if(!id)
     {
         //增加数据
@@ -130,7 +130,6 @@ exports.doEdit = function (req,res) {
         var param = [formData.title,formData.content,formData.classify.id,formData.classify.className,formData.description,id];
     };
     db.query(sql,param, function (rows) {
-        console.log(rows);
         if(rows.affectedRows == 1)
         {
             return res.redirect('/admin/blog/list');

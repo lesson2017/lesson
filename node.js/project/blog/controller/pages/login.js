@@ -8,7 +8,7 @@ var db = require('../../module/db_mysql_pool');
 exports.index = function (req, res, next) {
     //header data
     var header_info = {
-        title : "登录-星际实验室！",
+        title : "登录-土星实验室！",
         nickname : req.session.nickname || '',
         nav : 'login'
     };

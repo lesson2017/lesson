@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50520
 File Encoding         : 65001
 
-Date: 2017-03-10 16:55:13
+Date: 2017-03-14 17:46:00
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -28,10 +28,10 @@ CREATE TABLE `blog_classify` (
 -- ----------------------------
 -- Records of blog_classify
 -- ----------------------------
-INSERT INTO `blog_classify` VALUES ('1488881665218', '面试', '2017-03-07 18:14:25');
 INSERT INTO `blog_classify` VALUES ('1488881665219', 'Javascript', '2017-03-07 18:14:25');
 INSERT INTO `blog_classify` VALUES ('1488881665220', 'Css3', '2017-03-07 18:14:25');
 INSERT INTO `blog_classify` VALUES ('1488881665222', 'Node.js', '2017-03-07 18:14:25');
+INSERT INTO `blog_classify` VALUES ('1489475514659', 'Interview', '2017-03-14 15:11:54');
 
 -- ----------------------------
 -- Table structure for blog_labs
@@ -57,6 +57,8 @@ CREATE TABLE `blog_labs` (
 -- ----------------------------
 INSERT INTO `blog_labs` VALUES ('2017030317092952155', '铃木千奈美', '日本富士电视台旅游节目的人气女星铃木千奈美30日将在集英社出版第一部写真集《千奈美》。', '1488881665222', 'Node.js', '2017030317092952155.jpg', '2017030317092952155.zip', '2017-03-08 14:08:05', 'ghost', '99', '1');
 INSERT INTO `blog_labs` VALUES ('2017030814062012791', '铃木千奈美', '铃木千奈美测试', '1488881665218', '面试', '2017030814062012791.jpg', '2017030814062012791.zip', '2017-03-08 14:07:53', 'ghost', '99', '1');
+INSERT INTO `blog_labs` VALUES ('2017031417211384473', '铃木千奈美新番', '铃木千奈美新番铃木千奈美新番铃木千奈美新番铃木千奈美新番', '1488881665219', 'Javascript', '2017031417211384473.jpg', '2017031417211384473.zip', '2017-03-14 17:21:13', 'ghost', '99', '1');
+INSERT INTO `blog_labs` VALUES ('2017031417215366563', '战斗吧！书店女孩', '战斗吧！书店女孩战斗吧！书店女孩战斗吧！书店女孩战斗吧！书店女孩战斗吧！书店女孩战斗吧！书店女孩', '1488881665220', 'Css3', '2017031417215366563.jpg', '2017031417215366563.zip', '2017-03-14 17:21:53', 'ghost', '99', '1');
 
 -- ----------------------------
 -- Table structure for blog_list

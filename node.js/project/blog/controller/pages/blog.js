@@ -65,7 +65,7 @@ exports.index = function (req,res) {
 
             //header data
             var header_info = {
-                title : "博客-星际实验室！",
+                title : "博客-土星实验室！",
                 nickname : req.session.nickname || '',
                 role : req.session.role || '',
                 nav : "blog"
@@ -101,7 +101,7 @@ exports.blogDetails = function (req,res) {
 
         //header data
         var header_info = {
-            title : "博客-星际实验室！",
+            title : "博客-土星实验室！",
             nickname : req.session.nickname || '',
             role : req.session.role || '',
             nav : "blog"
